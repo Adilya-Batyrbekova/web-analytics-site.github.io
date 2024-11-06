@@ -130,6 +130,9 @@
                     <li class="nav-menu__item">
                         <a href="../contact.html" class="nav-menu__link">Связаться</a>
                     </li>
+                    <li class="nav-menu__item">
+                        <button class="nav-menu__link" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" style="font-size: 20px; "> Задание</button>
+                    </li>
 
                 </ul>
                 <a href="#" class="btn btn-outline-light d-lg-none d-block mt-4">Бронировать номер <span
@@ -204,7 +207,7 @@
                     <div class="header-info flx-align">
                         <div class="header-info__item text-white flx-align">
                             <span class="header-info__icon"><i class="fas fa-map-Марker-alt"></i></span>
-                            <button class="header-info__text text-white fw-light" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"> Задание</button>
+                        
                         </div>
                     </div>
                     <!-- <ul class="social-icon-list flx-align gap-2">
@@ -335,6 +338,9 @@
                             <li class="nav-menu__item">
                                 <a href="../contact.html" class="nav-menu__link">Связаться</a>
                             </li>
+                            <li class="nav-menu__item">
+                                <button class="nav-menu__link" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" style="font-size: 20px; "> Задание</button>
+                            </li>
                         </ul>
                     </div>
                     <!-- Menu End  -->
@@ -366,14 +372,12 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Заголовок модального окна
-                        </h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
                     </div>
                     <div class="modal-body">
                         <p class="font-20">Ваше задание найти жилье соответвующее следующим
                             критериям:</p>
-                        <ul class="font-20">
+                        <ul class="font-20" style="list-style-type: disc; padding: 20pt; margin: auto;" >
                             <li><b>Квартира</b></li>
                             <li>Стоимость <b>до 6000₽ за сутки</b></li>
                             <li>Находится на <b style="color: blue;">синей</b> ветки метро</li>
@@ -384,11 +388,6 @@
                                 фен, полотенца на каждого, постельное белье, телевизор,
                                 электрический чайник, микроволновка.</li>
                         </ul>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-                        <button type="button" class="btn btn-primary">Сохранить
-                            изменения</button>
                     </div>
                 </div>
             </div>
