@@ -8471,5 +8471,36 @@ p.account-alert:last-child {
     overflow: hidden;
 }
 
+svg {
+height: 24px;
+width: 24px;
+}
+.metro-icon-blue{
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #204982;
+}
+
+.metro-icon-green{
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    fill: #208228;
+  }
+
+  .metro-icon-red{
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    fill: #822020;
+  }
+
 /* ========================== Account Page Css End ==================== */
 /*# sourceMappingURL=main.css.map */
