@@ -424,6 +424,54 @@
     </div>
 </section>
 
+<!-- ============================ БРОНИРОВАНИЕ =========================== -->
+<div class="container mt-5 text-center">
+    <!-- Кнопка для открытия попапа -->
+    <button type="button" class="btn btn-main" style="padding: 30px 40px; font-weight: 700; font-size: 0.95rem;" data-bs-toggle="modal" data-bs-target="#bookingModal">
+      Забронировать
+    </button>
+  </div>
+
+  <!-- Попап форма -->
+  <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bookingModalLabel">Форма бронирования</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <!-- Поле Имя и Фамилия -->
+            <div class="mb-3">
+              <label for="fullName" class="form-label">Имя и фамилия</label>
+              <input type="text" class="form-control" id="fullName" placeholder="Введите ваше имя и фамилию" required>
+            </div>
+
+            <!-- Поле Желаемая дата бронирования -->
+            <div class="mb-3">
+              <label for="bookingDate" class="form-label">Желаемая дата бронирования</label>
+              <input type="date" class="form-control" id="bookingDate" required>
+            </div>
+
+            <!-- Поле Номер телефона -->
+            <div class="mb-3">
+              <label for="phoneNumber" class="form-label">Номер телефона</label>
+              <input type="tel" class="form-control" id="phoneNumber" placeholder="+7 (___) ___-__-__" required>
+            </div>
+
+            <!-- Кнопки отправки и закрытия -->
+            <div class="d-flex justify-content-end">
+              <button type="submit" class="btn btn-main">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================ БРОНИРОВАНИЕ =========================== -->
+
         <!-- ============================ Testimonials Section Start =========================== -->
         <section class="testimonial-four padding-y-120">
             <div class="container container-two">
