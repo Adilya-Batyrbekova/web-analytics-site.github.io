@@ -26,6 +26,7 @@
     <!-- Main css -->
     <link rel="stylesheet" href="../css/main.css">
 
+
 </head>
 <body>
     
@@ -230,32 +231,10 @@
 </section>
 <!-- ==================== Breadcrumb End Here ==================== -->
 
-<section class="property-details padding-y-120">
+<section class="property-details padding-y-120" style="padding-bottom: 0px;">
     <div class="container container-two">
         <div class="row gy-4">
             <div class="col-lg-12">
-                <!-- <div class="row gy-4">
-                    <div class="col-sm-12 col-6">
-                        <div class="property-details__thumb">
-                            <img src="../images/thumbs/property-details-1.png" alt="" class="cover-img">
-                        </div>
-                    </div>
-                    <div class="col-sm-4 col-6">
-                        <div class="property-details__thumb">
-                            <img src="../images/thumbs/property-details-2.png" alt="" class="cover-img">
-                        </div>
-                    </div>
-                    <div class="col-sm-4 col-6">
-                        <div class="property-details__thumb">
-                            <img src="../images/thumbs/property-details-3.png" alt="" class="cover-img">
-                        </div>
-                    </div>
-                    <div class="col-sm-4 col-6">
-                        <div class="property-details__thumb">
-                            <img src="../images/thumbs/property-details-4.png" alt="" class="cover-img">
-                        </div>
-                    </div>
-                </div> -->
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -302,6 +281,16 @@
                                         <div class="col-sm-4 col-6">
                                             <div class="amenities-content d-flex align-items-center">
                                                 <span class="amenities-content__icon">
+                                                    <img src="../images/icons/people.svg" alt="">
+                                                </span>
+                                                <div class="amenities-content__inner">
+                                                    <h6 class="amenities-content__title mb-0 font-16">4 гостя</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4 col-6">
+                                            <div class="amenities-content d-flex align-items-center">
+                                                <span class="amenities-content__icon">
                                                     <img src="../images/icons/amenities2.svg" alt="">
                                                 </span>
                                                 <div class="amenities-content__inner">
@@ -337,150 +326,156 @@
                                         <p><b>Отъезд:</b> до 12:00</p>
                                         <p><b>Минимальный срок проживания:</b> от 2 суток</p>
                                         <h6 style="margin: 20px 0 0 0 ;">Правила объекта размещения</h6>
-                                            <ul class="text-list-two" style="margin-top: 15px;">
-                                                <li class="text-list-two__item font-18">Можно с детьми любого возраста
-                                                    дети 1 года и младше размещаются бесплатно, но без дополнительного спального места</li>
-                                                <li class="text-list-two__item font-18">Курение запрещено</li>
-                                                <li class="text-list-two__item font-18">Можно с питомцами по согласованию с хозяином жилья</li>
-                                                <li class="text-list-two__item font-18">Без вечеринок и мероприятий</li>
-                                                <li class="text-list-two__item font-18">Владелец предоставляет отчетные документы о проживании</li>
-                                            </ul>
-                                            
-                                            <h6 style="margin: 20px 0 0 0 ;">Правила объекта размещения</h6>
-                                            <ul class="text-list-two" style="margin-top: 15px;">
-                                                <li class="text-list-two__item font-18">Можно с детьми любого возраста
-                                                    дети 1 года и младше размещаются бесплатно, но без дополнительного спального места</li>
-                                                <li class="text-list-two__item font-18">Курение запрещено</li>
-                                                <li class="text-list-two__item font-18">Можно с питомцами по согласованию с хозяином жилья</li>
-                                                <li class="text-list-two__item font-18">Без вечеринок и мероприятий</li>
-                                                <li class="text-list-two__item font-18">Владелец предоставляет отчетные документы о проживании</li>
-                                            </ul> 
+                                        <div class="container mt-4">
+                                                <div class="row">
+                                                  <div class="col-md-6">
+                                                    <ul class="list-unstyled">
+                                                      <li class="list-item mb-3">
+                                                        <img src="../images/icons/icon-child.png" class="icon">
+                                                        <span>Можно с детьми любого возраста
+                                                            дети 1 года и младше размещаются бесплатно, но без дополнительного спального места</span>
+                                                      </li>
+                                                      <li class="list-item mb-3">
+                                                        <img src="../images/icons/icon-smoking.png" class="icon">
+                                                        <span>Курение запрещено
+                                                        </span>
+                                                      </li>
+                                                      <li class="list-item mb-3">
+                                                        <img src="../images/icons/icon-animal.png" class="icon">
+                                                        <span>Можно с питомцами по согласованию с хозяином жилья</span>
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                    <ul class="list-unstyled">
+                                                      <li class="list-item mb-3">
+                                                        <img src="../images/icons/icon-party.png" class="icon">
+                                                        <span>Без вечеринок и мероприятий</span>
+                                                      </li>
+                                                      <li class="list-item mb-3">
+                                                        <img src="../images/icons/icon-document.png" alt="Иконка 5" class="icon">
+                                                        <span>Владелец предоставляет отчетные документы о проживании 
+                                                        </span>
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                        </div>
+
+                                        <h6 style="margin: 20px 0 0 0 ;">Основные удобства</h6>
+                                        <div class="container mt-4">
+                                                <div class="row">
+                                                  <div class="col-md-6">
+                                                    <ul class="list-unstyled">
+                                                      <li class="list-item mb-3">
+                                                        <img src="../images/icons/icon-Wi-Fi.png" alt="Иконка 1" class="icon">
+                                                        <span>Беспроводной интернет Wi-Fi</span>
+                                                      </li>
+                                                      <li class="list-item mb-3">
+                                                        <img src="../images/icons/icon-kettle.png" alt="Иконка 2" class="icon">
+                                                        <span>Электрический чайник
+                                                        </span>
+                                                      </li>
+                                                      <li class="list-item mb-3">
+                                                        <img src="../images/icons/icon-roller.png" alt="Иконка 3" class="icon">
+                                                        <span>Евроремонт</span>
+                                                      </li>
+                                                      
+                                                      <li class="list-item mb-3">
+                                                        <img src="../images/icons/icon-television.png" alt="Иконка 3" class="icon">
+                                                        <span>Телевизор</span>
+                                                      </li>
+                                                      
+                                                      <li class="list-item mb-3">
+                                                        <img src="../images/icons/icon-towel.png " class="icon">
+                                                        <span>Полотенца</span>
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                    <ul class="list-unstyled">
+                                                      <li class="list-item mb-3">
+                                                        <img src="../images/icons/icon-microwave.png" class="icon">
+                                                        <span>Микроволновка</span>
+                                                      </li>
+                                                      <li class="list-item mb-3">
+                                                        <img src="../images/icons/icon-bed-linen.png" class="icon">
+                                                        <span>Постельное белье</span>
+                                                      </li>
+                                                      <li class="list-item mb-3">
+                                                        <img src="../images/icons/icon-conditioner.png"  class="icon">
+                                                        <span>Кондиционер</span>
+                                                      </li>
+                                                      <li class="list-item mb-3">
+                                                        <img src="../images/icons/icon-hairdryer.png" class="icon">
+                                                        <span>Фен</span>
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         
-                        
                         </div>
                     </div>
-                    <div class="property-details-item">
-                        <h6 class="property-details-item__title">Preview</h6>
-                        <div class="property-details-item__content">
-                            <div class="row gy-4 gy-lg-5">
-                                <div class="col-sm-4 col-6">
-                                    <div class="amenities-content d-flex align-items-center">
-                                        <span class="amenities-content__icon">
-                                            <img src="../images/icons/amenities1.svg" alt="">
-                                        </span>
-                                        <div class="amenities-content__inner">
-                                            <span class="amenities-content__text">Room</span>
-                                            <h6 class="amenities-content__title mb-0 font-16">4 Room</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 col-6">
-                                    <div class="amenities-content d-flex align-items-center">
-                                        <span class="amenities-content__icon">
-                                            <img src="../images/icons/amenities2.svg" alt="">
-                                        </span>
-                                        <div class="amenities-content__inner">
-                                            <span class="amenities-content__text">Bed</span>
-                                            <h6 class="amenities-content__title mb-0 font-16">3 Beds</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 col-6">
-                                    <div class="amenities-content d-flex align-items-center">
-                                        <span class="amenities-content__icon">
-                                            <img src="../images/icons/amenities3.svg" alt="">
-                                        </span>
-                                        <div class="amenities-content__inner">
-                                            <span class="amenities-content__text">Bath</span>
-                                            <h6 class="amenities-content__title mb-0 font-16">2 Baths</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 col-6">
-                                    <div class="amenities-content d-flex align-items-center">
-                                        <span class="amenities-content__icon">
-                                            <img src="../images/icons/amenities4.svg" alt="">
-                                        </span>
-                                        <div class="amenities-content__inner">
-                                            <span class="amenities-content__text">Space</span>
-                                            <h6 class="amenities-content__title mb-0 font-16">3 Space</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 col-6">
-                                    <div class="amenities-content d-flex align-items-center">
-                                        <span class="amenities-content__icon">
-                                            <img src="../images/icons/amenities5.svg" alt="">
-                                        </span>
-                                        <div class="amenities-content__inner">
-                                            <span class="amenities-content__text">Size</span>
-                                            <h6 class="amenities-content__title mb-0 font-16">1020 sqft</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 col-6">
-                                    <div class="amenities-content d-flex align-items-center">
-                                        <span class="amenities-content__icon">
-                                            <img src="../images/icons/amenities6.svg" alt="">
-                                        </span>
-                                        <div class="amenities-content__inner">
-                                            <span class="amenities-content__text">Property Type</span>
-                                            <h6 class="amenities-content__title mb-0 font-16">Apartment</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="property-details-item">
-                        <h6 class="property-details-item__title">Features</h6>
-                        <div class="property-details-item__content">
-                            <div class="row gy-2">
-                                <div class="col-sm-6">
-                                    <ul class="check-list">
-                                        <li class="check-list__item d-flex align-items-center">
-                                            <span class="icon"><i class="fas fa-check"></i></span>
-                                            <span class="text">Dream Property Solutions</span>
-                                        </li>
-                                        <li class="check-list__item d-flex align-items-center">
-                                            <span class="icon"><i class="fas fa-check"></i></span>
-                                            <span class="text">Secure Property Partners</span>
-                                        </li>
-                                        <li class="check-list__item d-flex align-items-center">
-                                            <span class="icon"><i class="fas fa-check"></i></span>
-                                            <span class="text">Doors to Your Future</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm-6">
-                                    <ul class="check-list">
-                                        <li class="check-list__item d-flex align-items-center">
-                                            <span class="icon"><i class="fas fa-check"></i></span>
-                                            <span class="text">Prestige Property Management</span>
-                                        </li>
-                                        <li class="check-list__item d-flex align-items-center">
-                                            <span class="icon"><i class="fas fa-check"></i></span>
-                                            <span class="text">Global Real Estate Investments</span>
-                                        </li>
-                                        <li class="check-list__item d-flex align-items-center">
-                                            <span class="icon"><i class="fas fa-check"></i></span>
-                                            <span class="text">You Home with Experience</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
             </div>
-         </div>
+        </div>
     </div>
 </section>
 
-
+        <!-- ============================ Testimonials Section Start =========================== -->
+        <section class="testimonial-four padding-y-120">
+            <div class="container container-two">
+                <div class="section-heading">
+                    <span class="section-heading__subtitle">
+                        <span class="text-gradient fw-semibold">Отзыв клиентов</span>
+                    </span>
+                    <h2 class="section-heading__title">Ваше удовлетворение - наш главный приоритет</h2>
+                </div>
+                <div class="testimonial-four-slider">
+                    <div class="testimonial-item style-two style-four">
+                        <p class="testimonial-item__desc mt-0">Назойливое выяснение времени выезда. И по телефону, и по смс, и через сайт. Создалось впечатление, что хотят заселить раньше следующего постояльца. А это стоит половину Суточной цены (мне такое предложение перед заселением поступало).</p>
+                        <div class="testimonial-item__top flx-between gap-2">
+                            <div class="testimonial-item__info d-flex align-items-center">
+                                <div>
+                                    <h6 class="testimonial-item__name">Александр</h6>
+                                    <span class="testimonial-item__designation">Ноябрь 2024, 2 суток</span>
+                                </div>
+                            </div>
+                            <span class="testimonial-item__quote"><i class="fas fa-quote-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="testimonial-item style-two style-four">
+                        <p class="testimonial-item__desc mt-0">Отличная квартира полностью соответствует цена-качество, все предусмотрено, в общем если поедем ещё раз остановимся там, отличное расположение, окна выходят во двор спать не мешает шум машин, ключи в сейфе, ни с кем созваниваться не пришлось, чисто, уютно! Супер!!!</p>
+                        <div class="testimonial-item__top flx-between gap-2">
+                            <div class="testimonial-item__info d-flex align-items-center">
+                                <div>
+                                    <h6 class="testimonial-item__name">Анастасия Борисовна</h6>
+                                    <span class="testimonial-item__designation">Октябрь 2024, 11 суток
+                                        </span>
+                                </div>
+                            </div>
+                            <span class="testimonial-item__quote"><i class="fas fa-quote-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="testimonial-item style-two style-four">
+                        <p class="testimonial-item__desc mt-0">Расположение: в шаговой доступности многие достопримечательности. Поддержка и решение актуальных вопросов при заселении и в течении проживания отлично. Квартира просторная, район тихий, окна во двор. Всё необходимое имеется.</p>
+                        <div class="testimonial-item__top flx-between gap-2">
+                            <div class="testimonial-item__info d-flex align-items-center">
+                                <div>
+                                    <h6 class="testimonial-item__name">Яна Александровна</h6>
+                                    <span class="testimonial-item__designation">Сентябрь 2024, 6 суток</span>
+                                </div>
+                            </div>
+                            <span class="testimonial-item__quote"><i class="fas fa-quote-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ============================ Testimonials Section End =========================== -->
 
 <!-- ============================= CTA section Start ===================== -->
 <section class="cta padding-b-120">
