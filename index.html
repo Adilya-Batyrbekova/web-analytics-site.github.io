@@ -26,6 +26,25 @@
     <!-- Main css -->
     <link rel="stylesheet" href="css/main_start.css">
 
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(99134905, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true,
+         webvisor:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/99134905" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter -->
+
+
 </head>
 <body>
     
@@ -56,11 +75,9 @@
                           <br>
                           <p class="font-20">Это прототип сайта. Здесь тестируются алгоритмы и структура самой системы. Все поля можно заполнять несуществующими данными, они нигде не будут храниться.</p>
                           <p class="font-20">Спасибо за участие!</p>
-                        <div class="banner-content__button">
-                            <button id="startButton" class="btn btn-main fw-normal">Приступить
-                                <span class="icon-right"><i class="fas fa-arrow-right"></i></span>
-                            </button>
-                        </div>
+                          <button id="startButton" class="btn btn-main fw-normal">Приступить
+                            <span class="icon-right"><i class="fas fa-arrow-right"></i></span>
+                        </button>
                     </div>            
                 </div>
             </div>
@@ -92,48 +109,48 @@
 
 <!-- Custom Script -->
 <script>
-var tries = 20; // Количество попыток на получение ID
+document.addEventListener("DOMContentLoaded", function () {
+    var tries = 20; // Количество попыток на получение ID
+    getVersion();
 
-// Запуск проверки
-getVersion();
+    function getVersion() {
+        tries--;
 
-function getVersion() {
-    tries--;
+        // Пытаемся получить ID пользователя
+        let uid = localStorage.getItem("_ym_uid");
 
-    // Пытаемся получить ID пользователя
-    let uid = localStorage.getItem("_ym_uid");
+        if (uid) {
+            // Парсим и определяем версию
+            try {
+                let parsedUid = JSON.parse(uid); // Если данные в JSON
+                let version = parsedUid.substr(-8) % 2; // 0 или 1
 
-    if (uid) {
-        // Парсим JSON, если данные существуют
-        try {
-            let parsedUid = JSON.parse(uid);
-
-            // Используем последние 8 символов для вычисления версии
-            let version = parsedUid.substr(-8) % 2; // 0 или 1
-
-            // Добавляем обработчик для кнопки
-            const startButton = document.getElementById("startButton");
-            if (startButton) {
-                startButton.addEventListener("click", function () {
-                    if (version === 0) {
-                        window.location.href = "version_a/Main_a.html"; // Версия A
-                    } else {
-                        window.location.href = "version_b/Main_b.html"; // Версия B
-                    }
-                });
+                // Привязываем обработчик к кнопке
+                const startButton = document.getElementById("startButton");
+                if (startButton) {
+                    startButton.addEventListener("click", function () {
+                        if (version === 0) {
+                            window.location.href = "version_a/Main_a.html"; // Версия A
+                        } else {
+                            window.location.href = "version_b/Main_b.html"; // Версия B
+                        }
+                    });
+                } else {
+                    console.error("Кнопка с ID 'startButton' не найдена.");
+                }
+            } catch (error) {
+                console.error("Ошибка при парсинге _ym_uid:", error);
             }
-        } catch (error) {
-            console.error("Ошибка при парсинге _ym_uid:", error);
-        }
-    } else {
-        // Если идентификатор отсутствует, повторяем проверку через 500 мс
-        if (tries > 0) {
-            setTimeout(getVersion, 500);
         } else {
-            console.warn("Не удалось получить _ym_uid после 20 попыток.");
+            // Если идентификатор отсутствует, повторяем проверку через 500 мс
+            if (tries > 0) {
+                setTimeout(getVersion, 500);
+            } else {
+                console.warn("Не удалось получить _ym_uid после 20 попыток.");
+            }
         }
     }
-}
+});
 </script>
 
     </body>
