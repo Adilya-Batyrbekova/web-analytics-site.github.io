@@ -8059,7 +8059,7 @@ button.slick-next {
 }
 
 .text-list-two {
-    margin-top: 15px;
+    margin-top: 30px;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
 }
@@ -8731,6 +8731,45 @@ sup {
   }
 
 
+  .amenities {
+    padding: 20px;
+    background-color: #f8f9fa; /* Лёгкий фон */
+    border-radius: 10px; /* Закругление углов */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
+.amenities-content {
+    background-color: #ffffff; /* Белый фон для каждого блока */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+}
+
+.amenities-icon {
+    font-size: 24px; /* Размер иконки */
+    color: #007bff; /* Синий цвет иконки */
+    margin-right: 10px; /* Отступ между иконкой и текстом */
+}
+
+.amenities-content__title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333; /* Тёмный текст */
+}
+
+@media (max-width: 768px) {
+    .amenities-content {
+        flex-direction: column; /* Для маленьких экранов элементы располагаются вертикально */
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .amenities-icon {
+        margin-bottom: 10px; /* Отступ между иконкой и текстом */
+    }
+}
 
 
 
