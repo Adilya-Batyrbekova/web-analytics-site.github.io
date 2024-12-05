@@ -57,9 +57,9 @@
                           <p class="font-20">Это прототип сайта. Здесь тестируются алгоритмы и структура самой системы. Все поля можно заполнять несуществующими данными, они нигде не будут храниться.</p>
                           <p class="font-20">Спасибо за участие!</p>
                         <div class="banner-content__button">
-                            <a href="version_a/Main_a.html" class="btn btn-main fw-normal">Приступить
-                                <span class="icon-right"> <i class="fas fa-arrow-right"></i> </span> 
-                            </a>
+                            <button id="startButton" class="btn btn-main fw-normal">Приступить
+                                <span class="icon-right"><i class="fas fa-arrow-right"></i></span>
+                            </button>
                         </div>
                     </div>            
                 </div>
@@ -89,6 +89,52 @@
 
     <!-- main js -->
     <script src="js/main.js"></script>
+
+<!-- Custom Script -->
+<script>
+var tries = 20; // Количество попыток на получение ID
+
+// Запуск проверки
+getVersion();
+
+function getVersion() {
+    tries--;
+
+    // Пытаемся получить ID пользователя
+    let uid = localStorage.getItem("_ym_uid");
+
+    if (uid) {
+        // Парсим JSON, если данные существуют
+        try {
+            let parsedUid = JSON.parse(uid);
+
+            // Используем последние 8 символов для вычисления версии
+            let version = parsedUid.substr(-8) % 2; // 0 или 1
+
+            // Добавляем обработчик для кнопки
+            const startButton = document.getElementById("startButton");
+            if (startButton) {
+                startButton.addEventListener("click", function () {
+                    if (version === 0) {
+                        window.location.href = "version_a/Main_a.html"; // Версия A
+                    } else {
+                        window.location.href = "version_b/Main_b.html"; // Версия B
+                    }
+                });
+            }
+        } catch (error) {
+            console.error("Ошибка при парсинге _ym_uid:", error);
+        }
+    } else {
+        // Если идентификатор отсутствует, повторяем проверку через 500 мс
+        if (tries > 0) {
+            setTimeout(getVersion, 500);
+        } else {
+            console.warn("Не удалось получить _ym_uid после 20 попыток.");
+        }
+    }
+}
+</script>
 
     </body>
 </html>

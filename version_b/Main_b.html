@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title> Бронирование отлей </title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../images/logo/favicon.png">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="../css/fontawesome-all.min.css">
+    <!-- Magnific popup css -->
+    <link rel="stylesheet" href="../css/magnific-popup.css.css">
+    <!-- Slick -->
+    <link rel="stylesheet" href="../css/slick.css">
+    <!-- line awesome -->
+    <link rel="stylesheet" href="../css/line-awesome.min.css">
+    <!-- Image Uploader -->
+    <link rel="stylesheet" href="../css/image-uploader.min.css">
+    <!-- jQuery Ui Css -->
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <!-- Main css -->
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    <!--==================== Preloader Start ====================-->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+    <!--==================== Preloader End ====================-->
+
+    <!--==================== Overlay Start ====================-->
+    <div class="overlay"></div>
+    <!--==================== Overlay End ====================-->
+
+    <!--==================== Sidebar Overlay End ====================-->
+    <div class="side-overlay"></div>
+    <!--==================== Sidebar Overlay End ====================-->
+
+    <!-- ==================== Scroll to Top End Here ==================== -->
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- ==================== Scroll to Top End Here ==================== -->
+
+    <!-- ==================== Mobile Menu Start Here ==================== -->
+    <div class="mobile-menu d-lg-none d-block">
+        <button type="button" class="close-button"> <i class="las la-times"></i> </button>
+        <div class="mobile-menu__inner">
+            <a href="Main_a.html" class="mobile-menu__logo">
+                <img src="../images/logo/logo.png" alt="Logo">
+            </a>
+            <div class="mobile-menu__menu">
+
+                <ul class="nav-menu flx-align nav-menu--mobile">
+                    <!-- <li class="nav-menu__item has-submenu">
+        <a href="javascript:void(0)" class="nav-menu__link">Главная</a>
+    </li> -->
+                    <li class="nav-menu__item">
+                        <a href="property.html" class="nav-submenu__link" class="nav-menu__link">Недвижимость</a>
+                        <!-- <ul class="nav-submenu">
+                            <li class="nav-submenu__item">
+                                <a href="../property.html" class="nav-submenu__link"> Недвижимость</a>
+                            </li>
+                            <li class="nav-submenu__item">
+                                <a href="../property-sidebar.html" class="nav-submenu__link"> Боковая панель свойств
+                                </a>
+                            </li>
+                            <li class="nav-submenu__item">
+                                <a href="../property-details.html" class="nav-submenu__link"> Недвижимость Подробнее</a>
+                            </li>
+                            <li class="nav-submenu__item">
+                                <a href="../add-listing.html" class="nav-submenu__link"> Добавить новое объявление</a>
+                            </li>
+                            <li class="nav-submenu__item">
+                                <a href="../map-location.html" class="nav-submenu__link"> Расположение на карте</a>
+                            </li>
+                            <li class="nav-submenu__item">
+                                <a href="../about.html" class="nav-submenu__link"> О нас</a>
+                            </li>
+                            <li class="nav-submenu__item">
+                                <a href="../faq.html" class="nav-submenu__link"> ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</a>
+                            </li>
+                            <li class="nav-submenu__item">
+                                <a href="../checkout.html" class="nav-submenu__link"> Проверить</a>
+                            </li>
+                            <li class="nav-submenu__item">
+                                <a href="../cart.html" class="nav-submenu__link"> Корзина</a>
+                            </li>
+                            <li class="nav-submenu__item">
+                                <a href="../login.html" class="nav-submenu__link"> Войти</a>
+                            </li>
+                            <li class="nav-submenu__item">
+                                <a href="../account.html" class="nav-submenu__link"> Счет</a>
+                            </li>
+                        </ul> -->
+                    </li>
+                    <!-- <li class="nav-menu__item has-submenu">
+                        <a href="javascript:void(0)" class="nav-menu__link">Проект</a>
+                        <ul class="nav-submenu">
+                            <li class="nav-submenu__item">
+                                <a href="../project.html" class="nav-submenu__link"> Проект </a>
+                            </li>
+                            <li class="nav-submenu__item">
+                                <a href="../project-details.html" class="nav-submenu__link">Детали проекта</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-menu__item has-submenu">
+                        <a href="javascript:void(0)" class="nav-menu__link">Blog</a>
+                        <ul class="nav-submenu">
+                            <li class="nav-submenu__item">
+                                <a href="../blog-classic.html" class="nav-submenu__link"> Блог Классический</a>
+                            </li>
+                            <li class="nav-submenu__item">
+                                <a href="../blog-details.html" class="nav-submenu__link">Подробности в блоге</a>
+                            </li>
+                        </ul>
+                    </li> -->
+                    <!-- <li class="nav-menu__item">
+                        <a href="../contact.html" class="nav-menu__link">Связаться</a>
+                    </li> -->
+                    <li class="nav-menu__item">
+                        <button class="nav-menu__link" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" style="font-size: 20px; "> Задание</button>
+                    </li>
+
+                </ul>
+                <!-- <a href="#" class="btn btn-outline-light d-lg-none d-block mt-4">Бронировать номер <span
+                        class="icon-right text-gradient"> <i class="fas fa-arrow-right"></i> </span> </a> -->
+            </div>
+        </div>
+    </div>
+    <!-- ==================== Mobile Menu End Here ==================== -->
+
+
+    <!-- ==================== Right Offcanvas Start Here ==================== -->
+    <!-- <div class="common-offcanvas d-lg-block d-none">
+    <div class="flx-between">
+        <a href="index.html" class="mobile-menu__logo">
+            <img src="images/logo/white-logo.png" alt="Logo">
+        </a>
+        <button type="button" class="close-button d-flex position-relative top-0 end-0"> <i class="las la-times"></i> </button>
+    </div>
+
+    <div class="search-box mt-5">
+        <form action="#">
+            <input type="text" class="common-input common-input--light" placeholder="Search...">
+            <button type="submit" class="icon"> <i class="fas fa-search"></i> </button>
+        </form>
+    </div>
+
+    <ul class="address-list mt-5">
+        <li class="address-list__item flx-align">
+            <span class="address-list__icon"><i class="fas fa-map-Марker-alt"></i></span>
+            <div class="address-list__content">
+                <p class="address-list__text">улица Салова, 61, станция метро: Бухарестская <br>Санкт-Петербург</p>
+            </div>
+        </li>
+        <li class="address-list__item flx-align">
+            <span class="address-list__icon"> <i class="fas fa-phone"></i></span>
+            <div class="address-list__content">
+                <a href="tel:" class="address-list__text">+(1) 123 456 7890 </a>
+                <a href="tel:" class="address-list__text">+(1) 098 765 4321 </a>
+            </div>
+        </li>
+        <li class="address-list__item flx-align">
+            <span class="address-list__icon"> <i class="fas fa-envelope"></i></span>
+            <div class="address-list__content">
+                <a href="mailto:" class="address-list__text"> info@driller.com</a>
+                <a href="mailto:" class="address-list__text">info.example@driller.com</a>
+            </div>
+        </li>
+    </ul>
+
+    <div class="google-map mt-5">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1511.2499674845235!2d-73.99553882767792!3d40.75102778252164!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1686536419224!5m2!1sen!2sbd" loading="lazy" class="w-100 h-100"></iframe>
+    </div>
+
+    <ul class="social-list">
+    <li class="social-list__item"><a href="https://www.facebook.com" class="social-list__link flx-center"><i class="fab fa-facebook-f"></i></a> </li>
+    <li class="social-list__item"><a href="https://www.twitter.com" class="social-list__link flx-center"> <i class="fab fa-twitter"></i></a></li>
+    <li class="social-list__item"><a href="https://www.linkedin.com" class="social-list__link flx-center"> <i class="fab fa-linkedin-in"></i></a></li>
+    <li class="social-list__item"><a href="https://www.pinterest.com" class="social-list__link flx-center"> <i class="fab fa-instagram"></i></a></li>
+</ul>
+    
+</div> -->
+    <!-- ==================== Right Offcanvas End Here ==================== -->
+
+
+
+    <main class="body-bg">
+        <!-- ==================== Header Top Four Start Here ==================== -->
+
+        <div class="header-top bg--gradient">
+            <div class="container container-two">
+                <div class="flx-between justify-content-sm-between justify-content-center gap-2">
+                    <div class="header-info flx-align">
+                        <div class="header-info__item text-white flx-align">
+                            <span class="header-info__icon"><i class="fas fa-map-Марker-alt"></i></span>
+                        
+                        </div>
+                    </div>
+                    <!-- <ul class="social-icon-list flx-align gap-2">
+                <li class="social-icon-list__item">
+                    <a href="https://www.facebook.com" class="social-icon-list__link"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li class="social-icon-list__item">
+                    <a href="https://www.twitter.com" class="social-icon-list__link"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="social-icon-list__item">
+                    <a href="https://www.linkedin.com" class="social-icon-list__link"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+                <li class="social-icon-list__item">
+                    <a href="https://www.pinterest.com" class="social-icon-list__link"><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul> -->
+                </div>
+            </div>
+        </div>
+        <!-- ==================== Header Top Four End Here ==================== -->
+
+        <!-- ==================== Header Start Here ==================== -->
+        <header class="header bg-gray-100">
+            <div class="container container-two">
+                <nav class="header-inner flx-between">
+                    <!-- Logo Start -->
+                    <div class="logo">
+                        <a href="Main_a.html" class="link">
+                            <img src="../images/logo/logo.png" alt="Logo">
+                        </a>
+                    </div>
+                    <!-- Logo End -->
+
+                    <!-- Menu Start  -->
+                    <div class="header-menu d-lg-block d-none ">
+
+                        <ul class="nav-menu flx-align ">
+                            <li class="nav-menu__item">
+                                <a href="Main_a.html" class="nav-menu__link">Главная 222</a>
+                                <!-- <ul class="nav-submenu">
+            <li class="nav-submenu__item">
+                <a href="index.html" class="nav-submenu__link">Дом-1</a>
+            </li>
+            <li class="nav-submenu__item">
+                <a href="index-2.html" class="nav-submenu__link"> Дом-2</a>
+            </li>
+            <li class="nav-submenu__item">
+                <a href="index-3.html" class="nav-submenu__link">Дом-3</a>
+            </li>
+            <li class="nav-submenu__item">
+                <a href="index-4.html" class="nav-submenu__link">Дом-4</a>
+            </li>
+            <li class="nav-submenu__item">
+                <a href="index-8.html" class="nav-submenu__link">Дом-5</a>
+            </li>
+            <li class="nav-submenu__item">
+                <a href="index-6.html" class="nav-submenu__link">Дом-видео</a>
+            </li>
+            <li class="nav-submenu__item">
+                <a href="index-7.html" class="nav-submenu__link">Дом-карта</a>
+            </li>
+        </ul> -->
+                            </li>
+                            <li class="nav-menu__item">
+                                <a href="property.html" class="nav-submenu__link" class="nav-menu__link">Недвижимость</a>
+                                <!-- <ul class="nav-submenu">
+                                    <li class="nav-submenu__item">
+                                        <a href="../property.html" class="nav-submenu__link"> Недвижимость</a>
+                                    </li>
+                                    <li class="nav-submenu__item">
+                                        <a href="../property-sidebar.html" class="nav-submenu__link"> Боковая панель
+                                            свойств </a>
+                                    </li>
+                                    <li class="nav-submenu__item">
+                                        <a href="../property-details.html" class="nav-submenu__link"> Недвижимость
+                                            Подробнее</a>
+                                    </li>
+                                    <li class="nav-submenu__item">
+                                        <a href="../add-listing.html" class="nav-submenu__link"> Добавить новое
+                                            объявление</a>
+                                    </li>
+                                    <li class="nav-submenu__item">
+                                        <a href="../map-location.html" class="nav-submenu__link"> Расположение на
+                                            карте</a>
+                                    </li>
+                                    <li class="nav-submenu__item">
+                                        <a href="../about.html" class="nav-submenu__link"> О нас</a>
+                                    </li>
+                                    <li class="nav-submenu__item">
+                                        <a href="../faq.html" class="nav-submenu__link"> ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</a>
+                                    </li>
+                                    <li class="nav-submenu__item">
+                                        <a href="../checkout.html" class="nav-submenu__link"> Проверить</a>
+                                    </li>
+                                    <li class="nav-submenu__item">
+                                        <a href="../cart.html" class="nav-submenu__link"> Корзина</a>
+                                    </li>
+                                    <li class="nav-submenu__item">
+                                        <a href="../login.html" class="nav-submenu__link"> Вхойти</a>
+                                    </li>
+                                    <li class="nav-submenu__item">
+                                        <a href="../account.html" class="nav-submenu__link"> Счет</a>
+                                    </li>
+                                </ul> -->
+                            <!-- </li>
+                            <li class="nav-menu__item has-submenu">
+                                <a href="javascript:void(0)" class="nav-menu__link">Проект</a>
+                                <ul class="nav-submenu">
+                                    <li class="nav-submenu__item">
+                                        <a href="../project.html" class="nav-submenu__link"> Проект </a>
+                                    </li>
+                                    <li class="nav-submenu__item">
+                                        <a href="../project-details.html" class="nav-submenu__link">Детали проекта</a>
+                                    </li>
+                                </ul>
+                            </li> -->
+                            <!-- <li class="nav-menu__item has-submenu">
+                                <a href="javascript:void(0)" class="nav-menu__link">Blog</a>
+                                <ul class="nav-submenu">
+                                    <li class="nav-submenu__item">
+                                        <a href="../blog-classic.html" class="nav-submenu__link"> Блог Классика</a>
+                                    </li>
+                                    <li class="nav-submenu__item">
+                                        <a href="../blog-details.html" class="nav-submenu__link">Подробности в блоге</a>
+                                    </li>
+                                </ul>
+                            </li> -->
+                            <!-- <li class="nav-menu__item">
+                                <a href="../contact.html" class="nav-menu__link">Связаться</a>
+                            </li> -->
+                            <li class="nav-menu__item">
+                                <button class="nav-menu__link" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" style="font-size: 20px; "> Задание</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Menu End  -->
+
+                    <!-- Header Right start -->
+                    <div class="header-right flx-align">
+                        <a href="#"
+                            class="contact-number text-poppins text-gray-800 fw-500 d-flex align-items-center gap-2">
+                            <span class="icon text-gradient font-20"><i class="fas fa-phone"></i></span>
+                            <span class="text">(629) 555-0129</span>
+                        </a>
+                        <!-- <button type="button" class="offcanvas-btn d-lg-block d-none me-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 30 24" fill="none">
+                        <line x1="0.0078125" y1="12.293" x2="30.0078" y2="12.293" stroke="#181616" stroke-width="3"></line>
+                        <path d="M5.00781 22.293H30.0078" stroke="#181616" stroke-width="3"></path>
+                        <path d="M10.0078 2.29297H30.0078" stroke="#181616" stroke-width="3"></path>
+                    </svg>
+                </button> -->
+                        <button type="button" class="toggle-mobileMenu d-lg-none"> <i class="las la-bars"></i> </button>
+                    </div>
+                    <!-- Header Right End  -->
+                </nav>
+            </div>
+        </header>
+        <!-- ==================== Header End Here ==================== -->
+
+        <!-- Модальное окно -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="font-20">Ваше задание найти жилье соответвующее следующим
+                            критериям:</p>
+                        <ul class="font-20" style="list-style-type: disc; padding: 20pt; margin: auto;" >
+                            <li><b>Квартира</b></li>
+                            <li>Стоимость <b>до 6000₽ за сутки</b></li>
+                            <li>Находится на <b style="color: blue;">синей</b> ветке метро</li>
+                            <li>Количество проживающих <b>больше 3х</b> </li>
+                            <li>Количество спальных мест <b>больше 2х</b></li>
+                            <li>Разрешено <b>с домашними животными</b></li>
+                            <li>Включены все основные удобства: беспроводной интернет Wi-Fi,
+                                фен, полотенца на каждого, постельное белье, телевизор,
+                                электрический чайник, микроволновка.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================== Banner Five Start ========================= -->
+        <section class="banner-five banner bg-white">
+            <div class="container container-two">
+                <div class="row gy-4">
+                    <div class="col-lg-6">
+                        <div class="banner-inner position-relative">
+                            <div class="banner-content">
+                                <span class="banner-content__subtitle text-uppercase font-14">FinTech Fusion</span>
+                                <h1 class="banner-content__title">Отдых начинается здесь</h1>
+                                <p class="banner-content__desc font-18">Сравните предложения и выберите лучшее жилье за
+                                    считанные минуты!</p>
+                                <div class="banner-content__button">
+                                    <a href="property.html" class="btn btn-main fw-normal">Узнать больше
+                                        <span class="icon-right"> <i class="fas fa-arrow-right"></i> </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-0 order-1">
+                        <div class="banner-five__thumb">
+                            <img src="../images/thumbs/banner-five-img.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========================== Banner Five End ========================= -->
+        <!-- ======================= About five Start ========================= -->
+        <section class="about-five padding-y-120">
+            <div class="container container-two">
+                <div class="row flex-wrap-reverse">
+                    <div class="col-lg-5 col-md-6">
+                        <div class="about-five__thumbs">
+                            <div class="row gy-4">
+                                <div class="col-sm-6 col-6">
+                                    <div class="about-five__thumb one h-100 d-flex">
+                                        <img src="../images/thumbs/about-five-img1.png" alt="Image">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-6">
+                                    <div class="about-five__thumb two">
+                                        <img src="../images/thumbs/about-five-img2.png" alt="Image">
+                                    </div>
+                                    <div class="about-five__thumb three">
+                                        <img src="../images/thumbs/about-five-img3.png" alt="Image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about-five__content d-inline-flex align-items-center">
+                                <span class="about-five__icon"><i class="fas fa-users"></i></span>
+                                <div class="about-five__texts">
+                                    <h5 class="about-five__amount mb-0 text-white">25K+</h5>
+                                    <span class="about-five__text text-white font-18">Наших довольных клиентов</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-6 ps-xl-5">
+                        <div class="about-contents">
+                            <div class="section-heading style-left">
+                                <span class="section-heading__subtitle"> <span class="text-gradient fw-semibold">О
+                                        нас</span> </span>
+                                <h2 class="section-heading__title">Создаем воспоминания, которые останутся с вами
+                                    навсегда!</h2>
+
+                                <!-- <ul class="check-list mt-4 mt-lg-5">
+                            <li class="check-list__item d-flex align-items-center">
+                                <span class="icon"><i class="fas fa-check"></i></span>
+                                <span class="text text-body fw-normal font-16">Prestige Property Management Дом вашей мечты ждет</span>
+                            </li>
+                            <li class="check-list__item d-flex align-items-center">
+                                <span class="icon"><i class="fas fa-check"></i></span>
+                                <span class="text text-body fw-normal font-16"> Недвижимость - это обширная отрасль, которая занимается покупкой, продажей</span>
+                            </li>
+                        </ul>
+                         -->
+                                <!-- Кнопка-триггер модального окна -->
+
+
+
+                                <p class="section-heading__desc">Мы – команда профессионалов, преданных делу создания
+                                    идеальных условий для вашего отдыха. Наш сайт позволяет легко и быстро находить
+                                    жилье по всему миру, предлагая щедрые фильтры поиска, прозрачные цены и доступ к
+                                    уникальным предложениям. Мы уверены, что ваш отдых станет незабываемым с нашим
+                                    сервисом!</p>
+
+                                <!-- <div class="mt-4">
+                            <a href="#" class="simple-btn text-heading fw-semibold">Читать далее 
+                                <span class="icon-right text-gradient"> <i class="fas fa-arrow-right"></i></span>
+                            </a>
+                        </div> -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======================= About five End ========================= -->
+        <!-- ======================= Service Slider Section Start ======================= -->
+        <!-- <div class="service-slider-section overflow-hidden">
+    <div class="service-slider d-flex align-items-center gap-4">
+        <div class="service-slider__item  d-flex align-items-center gap-3">
+    <span class="service-slider__icon">
+        <img src="images/icons/service-slider-icon1.svg" alt="">
+    </span>
+    <h2 class="service-slider__text mb-0 fw-semibold">Бесконечное понимание недвижимости</h2>
+</div>
+        <div class="service-slider__item  d-flex align-items-center gap-3">
+    <span class="service-slider__icon">
+        <img src="images/icons/service-slider-icon2.svg" alt="">
+    </span>
+    <h2 class="service-slider__text mb-0 fw-semibold">Элитный пейзаж</h2>
+</div>
+        <div class="service-slider__item  d-flex align-items-center gap-3">
+    <span class="service-slider__icon">
+        <img src="images/icons/service-slider-icon3.svg" alt="">
+    </span>
+    <h2 class="service-slider__text mb-0 fw-semibold">Безопасны сделки</h2>
+</div>
+        <div class="service-slider__item  d-flex align-items-center gap-3">
+    <span class="service-slider__icon">
+        <img src="images/icons/service-slider-icon4.svg" alt="">
+    </span>
+    <h2 class="service-slider__text mb-0 fw-semibold">Помощь в бронирование</h2>
+</div>
+
+    </div>
+</div> -->
+        <!-- ======================= Service Slider Section Ends ======================= -->
+        <!-- ====================== property Type Five Start =============================== -->
+        <section class="property-type-five padding-y-120 bg-white">
+            <div class="container container-two">
+                <div class="section-heading">
+                    <span class="section-heading__subtitle">
+                        <span class="text-gradient fw-semibold">Популярные направления бронирования</span>
+                    </span>
+                    <h2 class="section-heading__title">Бронируйте уютные дома и стильные апартаменты в лучших уголках
+                        мира</h2>
+                </div>
+                <div class="row gy-4">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="property-type-five-item">
+                            <div class="property-type-five-item__thumb">
+                                <img src="../images/thumbs/property-type-five-img1.png" alt="Image" class="cover-img">
+                            </div>
+                            <div class="property-type-five-item__content">
+                                <span class="property-type-five-item__date">01</span>
+                                <h6 class="property-type-five-item__title">Дома</h6>
+                                <p class="property-type-five-item__desc">Идеальны для семейных поездок или групп друзей.
+                                    Часто располагаются в живописных местах, окруженных природой, и могут иметь
+                                    собственные участки, бассейны и удобства для барбекю.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="property-type-five-item">
+                            <div class="property-type-five-item__thumb">
+                                <img src="../images/thumbs/property-type-five-img2.png" alt="Image" class="cover-img">
+                            </div>
+                            <div class="property-type-five-item__content">
+                                <span class="property-type-five-item__date">02</span>
+                                <h6 class="property-type-five-item__title">Квартиры</h6>
+                                <p class="property-type-five-item__desc">Они подходят для туристов, желающих быть ближе
+                                    к культурным и развлекательным центрам. Разнообразие размеров и стилей позволяет
+                                    выбрать оптимальный вариант под любые нужды.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="property-type-five-item">
+                            <div class="property-type-five-item__thumb">
+                                <img src="../images/thumbs/property-type-five-img3.png" alt="Image" class="cover-img">
+                            </div>
+                            <div class="property-type-five-item__content">
+                                <span class="property-type-five-item__date">03</span>
+                                <h6 class="property-type-five-item__title">Номер в отеле</h6>
+                                <p class="property-type-five-item__desc">Большое разнообазие классы обслуживания – от
+                                    бюджетных до люксовых номеров. Каждый номер, оборудован ванной комнатой и
+                                    необходимой мебелью, а также можно получить дополнительные услуги от отеля.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ====================== property Type Five End =============================== -->
+        <!-- ===================== Choose Us Start =========================== -->
+        <section class="choose-us padding-y-120 bg-gray-900">
+            <div class="container">
+                <div class="row gy-4 flex-wrap-reverse">
+                    <div class="col-lg-6">
+                        <div class="choose-us__thumb">
+                            <div class="choose-us__thumb-inner">
+                                <img src="../images/thumbs/choose-us-img.png" alt="Choose Us" class="img cover-img">
+                                <!-- <a href="https://www.youtube.com/watch?v=pPl3ZZdTP3g" class="popup-video-link video-popup__button">
+                            <i class="fas fa-play"></i>
+                        </a> -->
+                            </div>
+                            <img src="../images/shapes/pipes.png" alt="Pipe Shape" class="pipe-shape">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ps-lg-5">
+                        <div class="choose-us__content">
+                            <div class="section-heading mb-0 style-left">
+                                <span class="section-heading__subtitle bg-gray-700"> <span
+                                        class="text-gradient fw-semibold">почему выбрали нас</span> </span>
+                                <h2 class="section-heading__title text-white">Комфорт в каждой детали</h2>
+                                <p class="section-heading__desc text-white fw-light font-18">Мы – команда преданных
+                                    своему делу профессионалов, стремящихся создать идеальные условия для вашего отдыха.
+                                    Наша платформа позволяет легко и быстро находить жилье по всему миру, предлагая
+                                    интуитивный интерфейс, разнообразные фильтры поиска и прозрачные цены. Мы гордимся
+                                    тем, что предоставляем доступ к уникальным предложениям, благодаря чему ваш отдых
+                                    становится не только комфортным, но и незабываемым. В каждой детали нашего сервиса
+                                    заложено желание обеспечить вам лучший опыт в путешествиях.</p>
+                                <!-- <div class="choose-us__button">
+                            <a href="blog-details.html" class="btn btn-outline-lightInDark text-white fw-normal">Читать далее 
+                                <span class="icon-right icon text-gradient"> 
+                                    <i class="fas fa-arrow-right"></i>
+                                 </span> 
+                            </a>
+                        </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===================== Choose Us End =========================== -->
+        <!-- ======================= Property Section Start ===================== -->
+        <section class="property-five padding-y-120">
+            <div class="container container-two">
+                <div class="section-heading style-left style-flex">
+                    <div class="section-heading__inner">
+                        <span class="section-heading__subtitle">
+                            <span class="text-gradient fw-semibold">Актуальные предложение</span>
+                        </span>
+                        <h2 class="section-heading__title">Проведите свой отпуск в лучшем месте</h2>
+                    </div>
+                </div>
+                <div class="property-five-slider arrow-style-two">
+                    <div class="property-item p-2 m-2 bg-white rounded style-white">
+                        <div class="property-item__thumb rounded">
+                            <a href="property.html" class="link">
+                                <img src="../images/thumbs/property-1.png" alt="" class="cover-img">
+                            </a>
+                        </div>
+                        <div class="property-item__content p-lg-4 p-3 bg-white">
+                            <!-- https://sutochno.ru/front/searchapp/detail/1650133?price_per=1&guests_adults=2&occupied=2024-12-29;2025-01-03&id=1&SW.lat=59.955805822410454&SW.lng=30.28516821951293&NE.lat=59.96109996539149&NE.lng=30.302119780487033 -->
+                            <h6 class="property-item__price text-heading fw-semibold">4 500₽ <span class="day fw-500">за
+                                    сутки</span> </h6>
+                            <h6 class="property-item__title text-heading fw-semibold"> <a href="property.html"
+                                    class="link">Апарт-отель В ритме Петроградки </a> </h6>
+                            <p class="property-item__location text-heading fw-normal d-flex gap-2"> <span
+                                    class="icon text-gradient"> <i class="fas fa-map-Марker-alt"></i></span> Малый
+                                Петроградской стороны проспект, 36-38, Санкт-Петербург, Россия</p>
+                            <div class="property-item__bottom border-color text-heading fw-semibold flx-between gap-2"><svg width="1166" height="174" viewBox="0 0 1166 174" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M987.43 136.126H993.499V136.068H1005.86V153.001C991.57 170.226 961.791 161.409 961.564 137.82C961.735 115.223 989.869 105.647 1004.5 121.529L995.654 129.061C988.054 119.252 973.703 125.675 973.93 137.878C973.703 148.505 984.991 155.453 993.499 148.972V145.06H987.43V136.126Z" fill="#F6A328"/>
+<path d="M1038.03 136.125C1034.85 136.125 1029.69 135.717 1027.7 138.344C1024.13 141.497 1026.23 156.503 1025.72 160.941H1013.64V125.674H1023.28L1024.07 128.418C1027.76 125.382 1033.38 125.557 1038.03 125.674V136.125Z" fill="#F6A328"/>
+<path d="M1041.54 143.306C1041.31 128.884 1056.46 120.826 1068.65 125.965C1083.8 131.862 1083.86 154.809 1068.6 160.648C1056.35 165.669 1041.37 157.728 1041.54 143.306ZM1053.57 143.248C1053.51 154.459 1068.14 154.575 1068.03 143.248C1068.14 132.095 1053.45 132.037 1053.57 143.248Z" fill="#F6A328"/>
+<path d="M1103.03 151.718C1105.64 151.777 1107.79 150.609 1108.48 147.865C1109.33 145.646 1108.76 128.363 1108.93 125.677H1121.07C1120.44 141.967 1125.89 161.937 1103.09 162.112C1080.34 161.937 1085.79 141.851 1085.16 125.677H1097.3C1097.47 128.479 1096.9 145.587 1097.7 147.865C1098.27 150.551 1100.48 151.777 1103.03 151.718Z" fill="#F6A328"/>
+<path d="M1165.99 143.247C1166.39 157.786 1151.7 166.544 1139.45 159.888V172.967H1127.42V125.672H1137.07L1137.63 127.891C1149.54 119.015 1166.45 128.066 1165.99 143.247ZM1153.86 143.305C1153.91 131.978 1138.71 131.978 1138.82 143.305C1138.77 154.399 1154.08 154.516 1153.86 143.305Z" fill="#F6A328"/>
+<path d="M413.952 47.6226L445.87 3.36523H476.757L443.531 47.5518L477.857 102.36H446.558L426.196 67.2374L413.952 83.8074V102.36H387.33V3.36523H413.952V47.6226Z" fill="white"/>
+<path d="M475.11 52.726C474.972 11.5135 521.474 -11.7835 554.906 7.90215C589.92 27.6586 589.713 77.7933 554.906 97.6914C521.405 117.519 475.041 93.8676 475.11 52.726ZM501.8 52.7968C501.25 72.5533 520.511 87.9902 538.534 79.7052C559.859 70.4289 559.859 35.1647 538.534 25.9591C520.511 17.6034 501.25 33.0403 501.8 52.7968Z" fill="white"/>
+<path d="M640.753 78.284L620.116 46.702V102.36H593.494V3.36523H616.951L644.055 42.7366L671.708 3.36523H694.821V102.36H668.268V46.9853L647.288 78.284H640.753Z" fill="white"/>
+<path d="M729.28 26.2374H703.896V3.36523H781.078V26.2374H755.764V102.36H729.28V26.2374Z" fill="white"/>
+<path d="M825.726 71.7006H816.852V102.362H790.23V3.36728C801.099 4.14621 837.833 1.24293 847.395 5.84569C855.925 9.10303 862.597 15.122 866.174 23.6903C872.709 39.0564 867.137 59.9459 851.866 67.3811L871.265 102.291H840.791L825.726 71.7006ZM831.779 48.8993C841.479 49.1117 845.4 36.2948 839.14 29.5676C837.283 27.5141 834.669 26.2395 831.848 26.3103H816.852V48.9701H831.779V48.8993Z" fill="white"/>
+<path d="M942.601 88.9787H906.211L901.258 102.362H873.123L911.989 3.29651H936.891L975.757 102.362H947.622L942.601 88.9787ZM914.603 66.319H934.208C933.452 64.053 924.165 40.4727 924.578 38.844H924.303C924.646 40.4018 915.36 64.1946 914.603 66.319Z" fill="white"/>
+<path d="M1073.92 102.36H1050.8L1010.49 49.1096V102.36H983.732V3.36523H1007.12L1047.23 56.4032V3.36523H1073.85V102.36H1073.92Z" fill="white"/>
+<path d="M1091.39 72.1271C1103.57 77.2964 1118.91 83.8818 1132.25 81.1202C1136.45 80.1996 1139.13 77.2963 1138.99 72.9768C1138.92 69.507 1136.79 67.8784 1133.7 66.2497C1119.04 59.2394 1096.62 58.3188 1088.16 41.5364C1087.06 39.1996 1086.51 36.5088 1086.51 33.5347C1086.92 8.96301 1103.29 0.81967 1127.44 0.748859C1140.3 0.678047 1152.48 4.64351 1164.03 9.67114L1156.95 31.7644C1147.18 27.7989 1135.55 24.2584 1124.89 23.8335C1121.11 23.8335 1118.01 24.1875 1115.4 25.9578C1110.86 29.7817 1113.47 35.0925 1118.36 37.0753C1130.67 42.1029 1146.49 43.0235 1156.67 51.6625C1170.36 62.6383 1168.71 87.9889 1153.51 97.1236C1132.94 110.082 1103.98 105.692 1083.41 95.2117L1091.39 72.1271Z" fill="white"/>
+<path d="M121.373 79.2006H66.2103C63.7293 79.2006 62.3725 76.2077 64.0007 74.2524L124.629 0.747803H186.15L121.373 79.2006Z" fill="url(#paint0_linear_2237_538)"/>
+<path d="M90.4388 42.2091L63.7683 74.532C61.5199 77.2455 61.5199 81.236 63.7683 83.9495L124.63 157.693H186.266L90.4388 42.2091Z" fill="url(#paint1_linear_2237_538)"/>
+<path d="M213.637 79.2006H158.474C155.993 79.2006 154.636 76.2077 156.264 74.2524L216.893 0.747803H278.414L213.637 79.2006Z" fill="#959492"/>
+<path d="M182.702 42.13L156.032 74.4529C153.784 77.1664 153.784 81.1569 156.032 83.8704L216.893 157.614H278.53L182.702 42.13Z" fill="url(#paint2_linear_2237_538)"/>
+<path d="M270.814 43.6056H321.093C323.109 43.6056 325.008 42.6878 326.326 41.1315L359.664 0.747925H309.386C307.37 0.747925 305.471 1.66573 304.153 3.22202L270.814 43.6056Z" fill="url(#paint3_linear_2237_538)"/>
+<path d="M88.8887 157.373H38.5714C36.5556 157.373 34.6561 156.455 33.3381 154.899L0 114.515H50.2785C52.2943 114.515 54.1938 115.433 55.5118 116.989L88.8887 157.373Z" fill="url(#paint4_linear_2237_538)"/>
+<path d="M279.19 157.814C309.233 143.807 324.39 98.3156 324.39 98.3156H312.722C312.722 98.3156 310.124 110.048 303.922 118.627H293.455C299.658 110.048 302.255 98.3156 302.255 98.3156H291.207C291.207 98.3156 288.61 110.048 282.407 118.627H271.553C277.755 110.048 280.353 98.3156 280.353 98.3156L269.615 98.2358C269.615 98.2358 258.412 138.021 216.816 157.774H279.19V157.814Z" fill="url(#paint5_linear_2237_538)"/>
+<mask id="path-21-inside-1_2237_538" fill="white">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M213.638 79.2006H213.463L253.766 127.77C265.669 112.248 269.614 98.2357 269.614 98.2357L280.352 98.3156C280.352 98.3156 277.755 110.048 271.553 118.627H282.407C288.609 110.048 291.207 98.3156 291.207 98.3156H302.255C302.255 98.3156 299.657 110.048 293.455 118.627H303.922C310.124 110.048 312.721 98.3156 312.721 98.3156H324.39C324.39 98.3156 309.232 143.807 279.189 157.814V157.774H216.816C216.928 157.721 217.039 157.668 217.15 157.614H216.893L156.032 83.8703C153.784 81.1567 153.784 77.1663 156.032 74.4527L182.702 42.1299L182.732 42.1651L216.894 0.747803H278.414L213.638 79.2006ZM121.373 79.2392H121.165L186.266 157.693H124.629L63.7677 83.9494C61.5193 81.2359 61.5193 77.2454 63.7677 74.5319L90.4382 42.2091L90.4507 42.2241L124.63 0.786456H186.15L121.373 79.2392ZM321.092 43.6056H270.814L304.152 3.22199C305.47 1.6657 307.369 0.747892 309.385 0.747892H359.663L326.325 41.1315C325.007 42.6878 323.108 43.6056 321.092 43.6056ZM88.8887 157.373H38.5714C36.5556 157.373 34.6561 156.455 33.3381 154.899L0 114.515H50.2785C52.2943 114.515 54.1938 115.433 55.5118 116.989L88.8887 157.373Z"/>
+</mask>
+<path d="M213.463 79.2006V77.7414C212.898 77.7414 212.383 78.0683 212.143 78.5803C211.902 79.0923 211.979 79.6971 212.34 80.1324L213.463 79.2006ZM213.638 79.2006V80.6598C214.073 80.6598 214.486 80.4654 214.763 80.1297L213.638 79.2006ZM253.766 127.77L252.643 128.702C252.926 129.044 253.35 129.238 253.794 129.229C254.238 129.221 254.654 129.011 254.924 128.658L253.766 127.77ZM269.614 98.2357L269.625 96.7766C268.968 96.7717 268.388 97.2073 268.21 97.8402L269.614 98.2357ZM280.352 98.3156L281.777 98.631C281.872 98.2009 281.768 97.7508 281.494 97.4063C281.219 97.0618 280.804 96.8597 280.363 96.8564L280.352 98.3156ZM271.553 118.627L270.37 117.772C270.049 118.216 270.004 118.803 270.253 119.291C270.503 119.779 271.005 120.086 271.553 120.086V118.627ZM282.407 118.627V120.086C282.875 120.086 283.315 119.862 283.589 119.482L282.407 118.627ZM291.207 98.3156V96.8564C290.522 96.8564 289.93 97.332 289.782 98.0002L291.207 98.3156ZM302.255 98.3156L303.679 98.631C303.775 98.199 303.67 97.747 303.393 97.402C303.116 97.0571 302.697 96.8564 302.255 96.8564V98.3156ZM293.455 118.627L292.272 117.772C291.951 118.216 291.906 118.803 292.156 119.291C292.405 119.779 292.907 120.086 293.455 120.086V118.627ZM303.922 118.627V120.086C304.39 120.086 304.83 119.862 305.104 119.482L303.922 118.627ZM312.721 98.3156V96.8564C312.037 96.8564 311.445 97.332 311.297 98.0002L312.721 98.3156ZM324.39 98.3156L325.774 98.7768C325.922 98.3318 325.848 97.8427 325.573 97.4623C325.299 97.0818 324.859 96.8564 324.39 96.8564V98.3156ZM279.189 157.814H277.73C277.73 158.312 277.985 158.776 278.405 159.044C278.826 159.312 279.354 159.347 279.806 159.136L279.189 157.814ZM279.189 157.774H280.649C280.649 156.968 279.995 156.314 279.189 156.314V157.774ZM216.816 157.774L216.19 156.456C215.574 156.748 215.243 157.429 215.393 158.094C215.543 158.76 216.134 159.233 216.816 159.233V157.774ZM217.15 157.614L217.781 158.93C218.395 158.636 218.724 157.955 218.573 157.291C218.422 156.627 217.831 156.155 217.15 156.155V157.614ZM216.893 157.614L215.768 158.543C216.045 158.879 216.458 159.073 216.893 159.073V157.614ZM156.032 83.8703L157.157 82.9415L157.156 82.9393L156.032 83.8703ZM156.032 74.4527L157.156 75.3838L157.157 75.3814L156.032 74.4527ZM182.702 42.1299L183.825 41.1981C183.548 40.8635 183.135 40.6701 182.7 40.6707C182.266 40.6713 181.854 40.8658 181.577 41.2012L182.702 42.1299ZM182.732 42.1651L181.609 43.0969C181.886 43.4316 182.299 43.625 182.734 43.6243C183.169 43.6237 183.581 43.4291 183.857 43.0936L182.732 42.1651ZM216.894 0.747803V-0.711394C216.458 -0.711394 216.045 -0.516755 215.768 -0.180692L216.894 0.747803ZM278.414 0.747803L279.54 1.67686C279.899 1.24118 279.975 0.636993 279.734 0.125882C279.494 -0.38523 278.979 -0.711394 278.414 -0.711394V0.747803ZM121.165 79.2392V77.78C120.6 77.78 120.085 78.1069 119.845 78.6189C119.604 79.1309 119.681 79.7357 120.042 80.171L121.165 79.2392ZM121.373 79.2392V80.6984C121.809 80.6984 122.221 80.504 122.499 80.1683L121.373 79.2392ZM186.266 157.693V159.153C186.831 159.153 187.346 158.826 187.587 158.314C187.827 157.802 187.75 157.197 187.389 156.762L186.266 157.693ZM124.629 157.693L123.504 158.622C123.781 158.958 124.194 159.153 124.629 159.153V157.693ZM63.7677 83.9494L64.8931 83.0206L64.8913 83.0184L63.7677 83.9494ZM63.7677 74.5319L64.8913 75.4629L64.8932 75.4606L63.7677 74.5319ZM90.4382 42.2091L91.5612 41.2774C91.2836 40.9427 90.8711 40.7493 90.4362 40.7499C90.0014 40.7505 89.5894 40.945 89.3127 41.2804L90.4382 42.2091ZM90.4507 42.2241L89.3276 43.1558C89.6053 43.4905 90.0178 43.6839 90.4527 43.6833C90.8876 43.6827 91.2996 43.4881 91.5763 43.1526L90.4507 42.2241ZM124.63 0.786456V-0.672741C124.194 -0.672741 123.781 -0.478103 123.504 -0.142039L124.63 0.786456ZM186.15 0.786456L187.275 1.71552C187.635 1.27984 187.711 0.675646 187.47 0.164535C187.229 -0.346577 186.715 -0.672741 186.15 -0.672741V0.786456ZM270.814 43.6056L269.688 42.6766C269.329 43.1123 269.253 43.7165 269.493 44.2276C269.734 44.7387 270.249 45.0648 270.814 45.0648V43.6056ZM304.152 3.22199L303.038 2.27894C303.034 2.28361 303.03 2.2883 303.026 2.29302L304.152 3.22199ZM359.663 0.747892L360.789 1.67686C361.148 1.24117 361.224 0.636996 360.983 0.125915C360.743 -0.385166 360.228 -0.711305 359.663 -0.711305V0.747892ZM326.325 41.1315L327.439 42.0746C327.443 42.0699 327.447 42.0652 327.451 42.0605L326.325 41.1315ZM88.8887 157.373V158.832C89.4538 158.832 89.9681 158.506 90.2089 157.994C90.4496 157.483 90.3735 156.879 90.0135 156.443L88.8887 157.373ZM33.3381 154.899L32.2128 155.828C32.2167 155.832 32.2206 155.837 32.2246 155.842L33.3381 154.899ZM0 114.515V113.056C-0.564976 113.056 -1.07918 113.382 -1.32 113.893C-1.56082 114.404 -1.48497 115.008 -1.12529 115.444L0 114.515ZM55.5118 116.989L56.6366 116.06C56.6329 116.055 56.6291 116.051 56.6253 116.046L55.5118 116.989ZM213.463 80.6598H213.638V77.7414H213.463V80.6598ZM254.889 126.838L214.586 78.2688L212.34 80.1324L252.643 128.702L254.889 126.838ZM269.614 98.2357C268.21 97.8402 268.21 97.8399 268.21 97.8397C268.21 97.8397 268.21 97.8395 268.21 97.8395C268.21 97.8395 268.21 97.8397 268.21 97.84C268.21 97.8408 268.209 97.8425 268.208 97.845C268.207 97.8499 268.205 97.8582 268.201 97.8699C268.194 97.8931 268.184 97.9296 268.169 97.9791C268.139 98.0779 268.094 98.2282 268.031 98.427C267.905 98.8246 267.709 99.416 267.438 100.177C266.894 101.699 266.044 103.897 264.825 106.578C262.387 111.942 258.479 119.226 252.608 126.882L254.924 128.658C260.956 120.792 264.972 113.309 267.482 107.786C268.738 105.024 269.618 102.749 270.186 101.159C270.47 100.363 270.676 99.7386 270.812 99.3093C270.881 99.0947 270.931 98.9288 270.965 98.8148C270.982 98.7577 270.995 98.7137 271.004 98.683C271.009 98.6676 271.012 98.6556 271.014 98.647C271.016 98.6427 271.017 98.6392 271.017 98.6366C271.018 98.6353 271.018 98.6342 271.018 98.6333C271.018 98.6328 271.019 98.6323 271.019 98.6321C271.019 98.6317 271.019 98.6313 269.614 98.2357ZM280.363 96.8564L269.625 96.7766L269.604 99.6949L280.341 99.7747L280.363 96.8564ZM272.735 119.482C275.951 115.033 278.207 109.81 279.653 105.743C280.379 103.701 280.908 101.932 281.256 100.671C281.43 100.04 281.559 99.5349 281.645 99.1854C281.689 99.0106 281.721 98.8746 281.743 98.781C281.754 98.7342 281.762 98.698 281.768 98.6728C281.77 98.6602 281.773 98.6504 281.774 98.6434C281.775 98.6399 281.776 98.6371 281.776 98.6351C281.776 98.634 281.777 98.6332 281.777 98.6325C281.777 98.6321 281.777 98.6318 281.777 98.6316C281.777 98.6312 281.777 98.631 280.352 98.3156C278.928 98.0002 278.928 98 278.928 97.9998C278.928 97.9998 278.928 97.9997 278.928 97.9997C278.928 97.9997 278.928 98 278.928 98.0003C278.927 98.0011 278.927 98.0026 278.927 98.0048C278.926 98.0091 278.924 98.0163 278.922 98.0261C278.917 98.0459 278.91 98.0766 278.901 98.1179C278.881 98.2003 278.852 98.3247 278.812 98.4875C278.732 98.8131 278.609 99.2918 278.443 99.8947C278.11 101.101 277.602 102.801 276.904 104.765C275.501 108.709 273.356 113.641 270.37 117.772L272.735 119.482ZM282.407 117.168H271.553V120.086H282.407V117.168ZM291.207 98.3156C289.782 98.0002 289.782 98 289.782 97.9998C289.782 97.9998 289.782 97.9997 289.782 97.9997C289.782 97.9997 289.782 98 289.782 98.0003C289.782 98.0011 289.781 98.0026 289.781 98.0048C289.78 98.0091 289.778 98.0163 289.776 98.0261C289.772 98.0459 289.764 98.0766 289.755 98.1179C289.736 98.2003 289.706 98.3247 289.666 98.4875C289.586 98.8131 289.464 99.2918 289.297 99.8947C288.964 101.101 288.456 102.801 287.758 104.765C286.355 108.709 284.211 113.641 281.224 117.772L283.589 119.482C286.806 115.033 289.061 109.81 290.508 105.743C291.234 103.701 291.763 101.932 292.111 100.671C292.285 100.04 292.414 99.5349 292.5 99.1854C292.543 99.0106 292.575 98.8746 292.597 98.781C292.608 98.7342 292.616 98.698 292.622 98.6728C292.625 98.6602 292.627 98.6504 292.629 98.6434C292.629 98.6399 292.63 98.6371 292.63 98.6351C292.631 98.634 292.631 98.6332 292.631 98.6325C292.631 98.6321 292.631 98.6318 292.631 98.6316C292.631 98.6312 292.631 98.631 291.207 98.3156ZM302.255 96.8564H291.207V99.7748H302.255V96.8564ZM294.638 119.482C297.854 115.033 300.109 109.81 301.556 105.743C302.282 103.701 302.811 101.932 303.159 100.671C303.333 100.04 303.462 99.5349 303.548 99.1854C303.591 99.0106 303.623 98.8746 303.645 98.781C303.656 98.7342 303.664 98.698 303.67 98.6728C303.673 98.6602 303.675 98.6504 303.677 98.6434C303.677 98.6399 303.678 98.6371 303.678 98.6351C303.679 98.634 303.679 98.6332 303.679 98.6325C303.679 98.6321 303.679 98.6318 303.679 98.6316C303.679 98.6313 303.679 98.631 302.255 98.3156C300.83 98.0002 300.83 98 300.83 97.9998C300.83 97.9998 300.83 97.9997 300.83 97.9997C300.83 97.9997 300.83 98 300.83 98.0003C300.83 98.0011 300.829 98.0026 300.829 98.0048C300.828 98.0091 300.826 98.0163 300.824 98.0261C300.82 98.0459 300.813 98.0766 300.803 98.1179C300.784 98.2003 300.754 98.3247 300.714 98.4875C300.634 98.8131 300.512 99.2918 300.345 99.8947C300.012 101.101 299.504 102.801 298.806 104.765C297.403 108.709 295.259 113.641 292.272 117.772L294.638 119.482ZM303.922 117.168H293.455V120.086H303.922V117.168ZM312.721 98.3156C311.297 98.0002 311.297 98 311.297 97.9998C311.297 97.9998 311.297 97.9997 311.297 97.9997C311.297 97.9997 311.297 98 311.297 98.0003C311.296 98.0011 311.296 98.0026 311.296 98.0048C311.295 98.0091 311.293 98.0163 311.291 98.0261C311.286 98.0459 311.279 98.0766 311.27 98.1179C311.25 98.2003 311.221 98.3247 311.181 98.4875C311.101 98.8131 310.978 99.2918 310.812 99.8947C310.479 101.101 309.971 102.801 309.273 104.765C307.87 108.709 305.725 113.641 302.739 117.772L305.104 119.482C308.32 115.033 310.576 109.81 312.022 105.743C312.748 103.701 313.277 101.932 313.625 100.671C313.799 100.04 313.928 99.5349 314.014 99.1854C314.057 99.0106 314.09 98.8746 314.112 98.781C314.123 98.7342 314.131 98.698 314.137 98.6728C314.139 98.6602 314.142 98.6504 314.143 98.6434C314.144 98.6399 314.145 98.6371 314.145 98.6351C314.145 98.634 314.146 98.6332 314.146 98.6325C314.146 98.6321 314.146 98.6318 314.146 98.6316C314.146 98.6313 314.146 98.631 312.721 98.3156ZM324.39 96.8564H312.721V99.7748H324.39V96.8564ZM279.806 159.136C295.245 151.938 306.734 136.737 314.321 123.539C318.13 116.914 320.989 110.733 322.896 106.209C323.851 103.946 324.568 102.095 325.047 100.807C325.287 100.162 325.468 99.6584 325.589 99.3139C325.649 99.1416 325.695 99.0091 325.726 98.9189C325.741 98.8737 325.753 98.8391 325.761 98.8153C325.765 98.8035 325.768 98.7943 325.77 98.7878C325.771 98.7846 325.772 98.7821 325.773 98.7803C325.773 98.7793 325.773 98.7785 325.774 98.778C325.774 98.7773 325.774 98.7768 324.39 98.3156C323.005 97.8543 323.005 97.8541 323.005 97.8541C323.005 97.8544 323.005 97.8546 323.005 97.855C323.005 97.8559 323.004 97.8576 323.003 97.8599C323.002 97.8645 322.999 97.8718 322.996 97.8818C322.989 97.9019 322.979 97.9328 322.965 97.9741C322.936 98.0568 322.893 98.1815 322.836 98.3459C322.72 98.6746 322.545 99.1617 322.312 99.7887C321.845 101.043 321.144 102.855 320.207 105.076C318.334 109.519 315.526 115.587 311.791 122.085C304.288 135.135 293.177 149.683 278.573 156.491L279.806 159.136ZM277.73 157.774V157.814H280.649V157.774H277.73ZM216.816 159.233H279.189V156.314H216.816V159.233ZM216.519 156.298C216.41 156.351 216.3 156.403 216.19 156.456L217.442 159.092C217.555 159.038 217.668 158.984 217.781 158.93L216.519 156.298ZM216.893 159.073H217.15V156.155H216.893V159.073ZM154.907 84.7991L215.768 158.543L218.019 156.685L157.157 82.9415L154.907 84.7991ZM154.908 73.5217C152.213 76.7753 152.213 81.5477 154.908 84.8013L157.156 82.9393C155.355 80.7658 155.355 77.5573 157.156 75.3838L154.908 73.5217ZM181.577 41.2012L154.906 73.524L157.157 75.3814L183.828 43.0586L181.577 41.2012ZM183.855 41.2333L183.825 41.1981L181.579 43.0617L181.609 43.0969L183.855 41.2333ZM215.768 -0.180692L181.606 41.2366L183.857 43.0936L218.02 1.6763L215.768 -0.180692ZM278.414 -0.711394H216.894V2.207H278.414V-0.711394ZM214.763 80.1297L279.54 1.67686L277.289 -0.181259L212.512 78.2715L214.763 80.1297ZM121.165 80.6984H121.373V77.78H121.165V80.6984ZM187.389 156.762L122.288 78.3074L120.042 80.171L185.143 158.625L187.389 156.762ZM124.629 159.153H186.266V156.234H124.629V159.153ZM62.6423 84.8783L123.504 158.622L125.755 156.765L64.8931 83.0206L62.6423 84.8783ZM62.6441 73.6009C59.9483 76.8545 59.9483 81.6269 62.6441 84.8804L64.8913 83.0184C63.0904 80.8449 63.0904 77.6364 64.8913 75.4629L62.6441 73.6009ZM89.3127 41.2804L62.6422 73.6032L64.8932 75.4606L91.5637 43.1378L89.3127 41.2804ZM91.5737 41.2924L91.5612 41.2774L89.3151 43.1408L89.3276 43.1558L91.5737 41.2924ZM123.504 -0.142039L89.325 41.2956L91.5763 43.1526L125.755 1.71495L123.504 -0.142039ZM186.15 -0.672741H124.63V2.24565H186.15V-0.672741ZM122.499 80.1683L187.275 1.71552L185.025 -0.142606L120.248 78.3102L122.499 80.1683ZM270.814 45.0648H321.092V42.1464H270.814V45.0648ZM303.026 2.29302L269.688 42.6766L271.939 44.5346L305.277 4.15095L303.026 2.29302ZM309.385 -0.711305C306.919 -0.711305 304.62 0.411549 303.038 2.27894L305.265 4.16503C306.32 2.91985 307.819 2.20709 309.385 2.20709V-0.711305ZM359.663 -0.711305H309.385V2.20709H359.663V-0.711305ZM327.451 42.0605L360.789 1.67686L358.538 -0.181074L325.2 40.2026L327.451 42.0605ZM321.092 45.0648C323.558 45.0648 325.857 43.942 327.439 42.0746L325.212 40.1885C324.157 41.4337 322.658 42.1464 321.092 42.1464V45.0648ZM38.5714 158.832H88.8887V155.914H38.5714V158.832ZM32.2246 155.842C33.8061 157.709 36.1058 158.832 38.5714 158.832V155.914C37.0055 155.914 35.5062 155.201 34.4516 153.956L32.2246 155.842ZM-1.12529 115.444L32.2128 155.828L34.4634 153.97L1.12529 113.586L-1.12529 115.444ZM50.2785 113.056H0V115.974H50.2785V113.056ZM56.6253 116.046C55.0438 114.179 52.7442 113.056 50.2785 113.056V115.974C51.8444 115.974 53.3438 116.687 54.3983 117.932L56.6253 116.046ZM90.0135 156.443L56.6366 116.06L54.3871 117.919L87.7639 158.302L90.0135 156.443Z" fill="white" mask="url(#path-21-inside-1_2237_538)"/>
+<defs>
+<linearGradient id="paint0_linear_2237_538" x1="162.551" y1="0.709108" x2="132.418" y2="75.1375" gradientUnits="userSpaceOnUse">
+<stop stop-color="#959492"/>
+<stop offset="1" stop-color="#544E4E"/>
+</linearGradient>
+<linearGradient id="paint1_linear_2237_538" x1="75.5824" y1="63.1287" x2="162.094" y2="146.521" gradientUnits="userSpaceOnUse">
+<stop stop-color="#959492"/>
+<stop offset="1" stop-color="#544E4E"/>
+</linearGradient>
+<linearGradient id="paint2_linear_2237_538" x1="173.935" y1="55.8434" x2="255.63" y2="144.394" gradientUnits="userSpaceOnUse">
+<stop stop-color="#959492"/>
+<stop offset="1" stop-color="#544E4E"/>
+</linearGradient>
+<linearGradient id="paint3_linear_2237_538" x1="354.249" y1="0.638313" x2="316.335" y2="68.7269" gradientUnits="userSpaceOnUse">
+<stop stop-color="#959492"/>
+<stop offset="1" stop-color="#544E4E"/>
+</linearGradient>
+<linearGradient id="paint4_linear_2237_538" x1="2.79203" y1="137.306" x2="91.6194" y2="134.565" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FAB81C"/>
+<stop offset="0.7778" stop-color="#EE7D1D"/>
+</linearGradient>
+<linearGradient id="paint5_linear_2237_538" x1="270.409" y1="173.312" x2="270.85" y2="62.5814" gradientUnits="userSpaceOnUse">
+<stop stop-color="#EE7D1D"/>
+<stop offset="0.6964" stop-color="#FAB81C"/>
+</linearGradient>
+</defs>
+</svg>
+
+                                <ul class="amenities-list flx-align">
+                                    <li class="amenities-list__item flx-align">
+                                        <span class="icon text-gradient"><i class="fas fa-bed"></i></span>
+                                        <span class="text text-heading fw-500">3 гостя</span>
+                                    </li>
+                                    <li class="amenities-list__item flx-align">
+                                        <span class="icon text-gradient"><i class="fas fa-bed"></i></span>
+                                        <span class="text text-heading fw-500">2 кровати</span>
+                                    </li>
+                                    <li class="amenities-list__item flx-align">
+                                        <span class="icon text-gradient"><i class="fas fa-bath"></i></span>
+                                        <span class="text text-heading fw-500">1 спальня</span>
+                                    </li>
+                                </ul>
+                                <a href="property.html" class="simple-btn text-heading">Забронировать сейчас <span
+                                        class="icon-right text-gradient"> <i class="fas fa-arrow-right"></i> </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="property-item p-2 m-2 bg-white rounded style-white">
+                        <div class="property-item__thumb rounded">
+                            <a href="property.html" class="link">
+                                <img src="../images/thumbs/property-2.png" alt="" class="cover-img">
+                            </a>
+                        </div>
+                        <div class="property-item__content p-lg-4 p-3 bg-white">
+                            <!-- https://sutochno.ru/front/searchapp/detail/1865442?price_per=1&guests_adults=2&occupied=2024-12-29;2025-01-03&id=1&SW.lat=59.70158047109154&SW.lng=29.369896219512928&NE.lat=59.70691531561338&NE.lng=29.38684778048703 -->
+                            <h6 class="property-item__price text-heading fw-semibold">6 000₽ <span class="day fw-500">за
+                                    сутки</span> </h6>
+                            <h6 class="property-item__title text-heading fw-semibold"> <a href="property.html"
+                                    class="link">Уютный БарнХаус </a> </h6>
+                            <p class="property-item__location text-heading fw-normal d-flex gap-2"> <span
+                                    class="icon text-gradient"> <i class="fas fa-map-Марker-alt"></i></span> Лопухинское
+                                сельское поселение, ДНП Сказка территория, 39,Санкт-Петербург, Россия </p>
+                            <div class="property-item__bottom border-color text-heading fw-semibold flx-between gap-2">
+                                <ul class="amenities-list flx-align">
+                                    <li class="amenities-list__item flx-align">
+                                        <span class="icon text-gradient"><i class="fas fa-bed"></i></span>
+                                        <span class="text text-heading fw-500">6 гостей</span>
+                                    </li>
+                                    <li class="amenities-list__item flx-align">
+                                        <span class="icon text-gradient"><i class="fas fa-bed"></i></span>
+                                        <span class="text text-heading fw-500">3 кровати</span>
+                                    </li>
+                                    <li class="amenities-list__item flx-align">
+                                        <span class="icon text-gradient"><i class="fas fa-bath"></i></span>
+                                        <span class="text text-heading fw-500">2 спальни</span>
+                                    </li>
+                                </ul>
+                                <a href="property.html" class="simple-btn text-heading">Забронировать сейчас <span
+                                        class="icon-right text-gradient"> <i class="fas fa-arrow-right"></i> </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="property-item p-2 m-2 bg-white rounded style-white">
+                        <div class="property-item__thumb rounded">
+                            <a href="property.html" class="link">
+                                <img src="../images/thumbs/property-3.png" alt="" class="cover-img">
+                            </a>
+                        </div>
+                        <div class="property-item__content p-lg-4 p-3 bg-white">
+                            <h6 class="property-item__price text-heading fw-semibold">12 000₽ <span
+                                    class="day fw-500">за сутки</span> </h6>
+                            <h6 class="property-item__title text-heading fw-semibold"> <a href="property.html"
+                                    class="link">Горы посёлок, Ключевая улица, 52 </a> </h6>
+                            <p class="property-item__location text-heading fw-normal d-flex gap-2"> <span
+                                    class="icon text-gradient"> <i class="fas fa-map-Марker-alt"></i></span> Горы
+                                посёлок, Ключевая улица, 52, Санкт-Петербург, Россия</p>
+                            <div class="property-item__bottom border-color text-heading fw-semibold flx-between gap-2">
+                                <ul class="amenities-list flx-align">
+                                    <li class="amenities-list__item flx-align">
+                                        <span class="icon text-gradient"><i class="fas fa-bed"></i></span>
+                                        <span class="text text-heading fw-500">4 гостя</span>
+                                    </li>
+                                    <li class="amenities-list__item flx-align">
+                                        <span class="icon text-gradient"><i class="fas fa-bed"></i></span>
+                                        <span class="text text-heading fw-500">2 кровати</span>
+                                    </li>
+                                    <li class="amenities-list__item flx-align">
+                                        <span class="icon text-gradient"><i class="fas fa-bath"></i></span>
+                                        <span class="text text-heading fw-500">2 спальни</span>
+                                    </li>
+                                </ul>
+                                <a href="property.html" class="simple-btn text-heading">Забронировать сейчас <span
+                                        class="icon-right text-gradient"> <i class="fas fa-arrow-right"></i> </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="property-item p-2 m-2 bg-white rounded style-white">
+                        <div class="property-item__thumb rounded">
+                            <a href="property.html" class="link">
+                                <img src="../images/thumbs/property-4.png" alt="" class="cover-img">
+                            </a>
+                        </div>
+                        <div class="property-item__content p-lg-4 p-3 bg-white">
+                            <h6 class="property-item__price text-heading fw-semibold">$500.00 <span
+                                    class="day fw-500">за сутки</span> </h6>
+                            <h6 class="property-item__title text-heading fw-semibold"> <a href="property.html"
+                                    class="link">Paramount Investments Управление престижной недвижимостью </a> </h6>
+                            <p class="property-item__location text-heading fw-normal d-flex gap-2"> <span
+                                    class="icon text-gradient"> <i class="fas fa-map-Марker-alt"></i></span> 66
+                                Броклянт, Нью-Йорк, Америка</p>
+                            <div class="property-item__bottom border-color text-heading fw-semibold flx-between gap-2">
+                                <ul class="amenities-list flx-align">
+                                    <li class="amenities-list__item flx-align">
+                                        <span class="icon text-gradient"><i class="fas fa-bed"></i></span>
+                                        <span class="text text-heading fw-500">3 Кровати</span>
+                                    </li>
+                                    <li class="amenities-list__item flx-align">
+                                        <span class="icon text-gradient"><i class="fas fa-bath"></i></span>
+                                        <span class="text text-heading fw-500">3 Ванны</span>
+                                    </li>
+                                </ul>
+                                <a href="property.html" class="simple-btn text-heading">Забронировать сейчас <span
+                                        class="icon-right text-gradient"> <i class="fas fa-arrow-right"></i> </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======================= Property Section End ===================== -->
+        <!-- ============================= Message Two Section Start ======================== -->
+        <section class="message-three bg-white padding-y-120">
+            <div class="container container-two">
+                <div class="row gy-4 gy-sm-5">
+                    <div class="col-lg-4">
+                        <div class="message-two__content">
+                            <div class="section-heading style-left mb-0">
+                                <span class="section-heading__subtitle bg-gray-100">
+                                    <span class="text-gradient fw-semibold">Получить предложение</span>
+                                </span>
+                                <h2 class="section-heading__title">Мы поможем вам с выбором</h2>
+                                <p class="section-heading__desc">Доверьте свой выбор профессионала. Мы оценим все ваши
+                                    пожелание и найдем подходящий для вас вариант жилья.</p>
+                                <div class="contact-content__box">
+                                    <div class=" d-flex align-items-center gap-3">
+                                        <div class="contact-content__icon">
+                                            <img src="../images/icons/customer-service.svg" alt="">
+                                        </div>
+                                        <div class="contact-content__infos">
+                                            <span class="contact-content__text">Нужна помощь?</span>
+                                            <a href="#"
+                                                class="contact-content__contact font-20 fw-semibold text-heading">(307)
+                                                555-0133</a>
+                                        </div>
+                                    </div>
+                                    <p class="section-heading__desc">Наши операторы помогут решить любой ваш вопрос.
+                                        Обращайтесь, не стесяйтесь.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 ps-lg-4">
+                        <div class="form-box max-w-unset">
+                            <form action="#">
+                                <div class="row gy-4">
+                                    <div class="col-sm-6 col-xs-6">
+                                        <label for="name" class="form-label">Имя</label>
+                                        <div class="position-relative">
+                                            <input type="text" id="name" class="common-input common-input--withIcon"
+                                                placeholder="Андрей">
+                                            <span class="input-icon"><i class="fas fa-user"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-6">
+                                        <label for="phone" class="form-label">Телефон</label>
+                                        <div class="position-relative">
+                                            <input type="tel" id="phone" class="common-input common-input--withIcon"
+                                                placeholder="8 (888) 88-88-88">
+                                            <span class="input-icon"><i class="fas fa-phone"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <label for="email" class="form-label">Email</label>
+                                        <div class="position-relative">
+                                            <input type="email" id="email" class="common-input common-input--withIcon"
+                                                placeholder="andrey@mail.ru">
+                                            <span class="input-icon"><i class="fas fa-paper-plane"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <label for="message" class="form-label">Ваш запрос</label>
+                                        <div class="position-relative">
+                                            <textarea id="message" class="common-input common-input--withIcon"
+                                                placeholder="Помогите в бронирование..."></textarea>
+                                            <span class="input-icon"><i class="fas fa-map-marker-alt"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <button type="submit" class="btn btn-main w-100"> Отправить </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ============================= Message Two Section End ======================== -->
+        <!-- ======================= Counter Section Start ======================= -->
+        <section class="counter-six">
+            <div class="container container-two">
+                <div class="counter-six__inner bg-white">
+                    <div class="row gy-4">
+                        <div class="col-lg-4 col-6">
+                            <div class="counter-six-item">
+                                <div class="d-flex align-items-center gap-2 gap-sm-3">
+                                    <span class="counter-six-item__icon">
+                                        <img src="../images/icons/counter-six-img1.svg" alt="">
+                                    </span>
+                                    <h2 class="counter-six-item__number mb-0">100k+</h2>
+                                </div>
+                                <span class="counter-six-item__text font-18">ОБСЛУЖЕНЫХ КЛИЕНТОВ</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-6">
+                            <div class="counter-six-item">
+                                <div class="d-flex align-items-center gap-2 gap-sm-3">
+                                    <span class="counter-six-item__icon">
+                                        <img src="../images/icons/counter-six-img2.svg" alt="">
+                                    </span>
+                                    <h2 class="counter-six-item__number mb-0">40+</h2>
+                                </div>
+                                <span class="counter-six-item__text font-18">ГОРОДОВ ОБСЛУЖИВАНИЯ</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-6">
+                            <div class="counter-six-item">
+                                <div class="d-flex align-items-center gap-2 gap-sm-3">
+                                    <span class="counter-six-item__icon">
+                                        <img src="../images/icons/counter-six-img3.svg" alt="">
+                                    </span>
+                                    <h2 class="counter-six-item__number mb-0">10k+</h2>
+                                </div>
+                                <span class="counter-six-item__text font-18">ВАРИАНТОВ БРОНИРОВАНИЯ</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- ======================= Counter Section End ======================= -->
+
+        <!-- ============================ Testimonials Section Start =========================== -->
+        <section class="testimonial-four padding-y-120">
+            <div class="container container-two">
+                <div class="section-heading">
+                    <span class="section-heading__subtitle">
+                        <span class="text-gradient fw-semibold">Отзыв клиентов</span>
+                    </span>
+                    <h2 class="section-heading__title">Ваше удовлетворение - наш главный приоритет</h2>
+                </div>
+                <div class="testimonial-four-slider">
+                    <div class="testimonial-item style-two style-four">
+                        <p class="testimonial-item__desc mt-0">Все прошло гладко, квартира была именно такой, как на
+                            фото! Очень рекомендую!</p>
+                        <div class="testimonial-item__top flx-between gap-2">
+                            <div class="testimonial-item__info d-flex align-items-center">
+                                <div>
+                                    <h6 class="testimonial-item__name">Сарра</h6>
+                                    <span class="testimonial-item__designation text-gradient">Бронировал квартиру в
+                                        Риме.</span>
+                                </div>
+                            </div>
+                            <span class="testimonial-item__quote"><i class="fas fa-quote-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="testimonial-item style-two style-four">
+                        <p class="testimonial-item__desc mt-0">Мы с семьей провели замечательные выходные в этом доме у
+                            озера. Просторные комнаты, чудесный вид и прекрасно оборудованная кухня сделали наше время
+                            невероятно комфортным. Дети наслаждались игрой на улице, а мы — барбекю на веранде.
+                            Обязательно вернемся!</p>
+                        <div class="testimonial-item__top flx-between gap-2">
+                            <div class="testimonial-item__info d-flex align-items-center">
+                                <div>
+                                    <h6 class="testimonial-item__name">Андрей</h6>
+                                    <span class="testimonial-item__designation text-gradient">Дом</span>
+                                </div>
+                            </div>
+                            <span class="testimonial-item__quote"><i class="fas fa-quote-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="testimonial-item style-two style-four">
+                        <p class="testimonial-item__desc mt-0">Снимая квартиру в центре города, мы получили именно то,
+                            что искали. Уютное пространство с полной кухней и удобными кроватями. Мы могли готовить
+                            завтраки и исследовать окрестности, не теряя времени на поездки обратно в отель. Отличное
+                            расположение, все основные достопримечательности были в шаговой доступности!</p>
+                        <div class="testimonial-item__top flx-between gap-2">
+                            <div class="testimonial-item__info d-flex align-items-center">
+                                <div>
+                                    <h6 class="testimonial-item__name">Виктор</h6>
+                                    <span class="testimonial-item__designation text-gradient">Квартира</span>
+                                </div>
+                            </div>
+                            <span class="testimonial-item__quote"><i class="fas fa-quote-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ============================ Testimonials Section End =========================== -->
+
+        <!-- ==================== Blog Start Here ==================== -->
+
+        <!-- ==================== Blog End Here ==================== -->
+
+        <!-- =================== Footer Three Start ====================== -->
+        <footer class="footer padding-y-120 ">
+            <div class="container container-two">
+
+                <div class="footer-top flx-between gap-3">
+                    <div class="footer-top__left">
+                        <span class="icon"><img src="../images/icons/envelop-icon.svg" alt=""></span>
+                        <h2 class="text text-white mb-0">Подпишитесь на мою рассылку</h2>
+                    </div>
+                    <form action="#" class="subscribe-form d-flex align-items-center gap-4">
+                        <div class="position-relative w-100">
+                            <input type="text" class="common-input common-input--withLeftIcon w-100"
+                                placeholder="Введите адрес электронной почты">
+                            <span class="input-icon input-icon--left text-gradient font-20 line-height-1"><i
+                                    class="far fa-envelope"></i></span>
+                        </div>
+                        <button type="submit" class="btn btn-main flex-shrink-0 fw-normal">Подписаться</button>
+                    </form>
+                </div>
+                <div class="row">
+                    <div >
+                        <div>
+                            <div class="footer-item__logo">
+                                <a href="index.html"> <img src="../images/logo/white-logo.png" alt=""></a>
+                            </div>
+                            <p class="footer-item__desc max-w-unset">Бронирование уникальных домов, квартир и
+                                апартаментов по всему миру.</p>
+                        </div>
+                    </div>
+                    <div >
+                        <div class="footer-item">
+                            <h6 class="footer-item__title">Свяжитесь с нами</h6>
+                            <div class="footer-contact">
+                                <div class="footer-contact__item font-18 d-flex align-items-start">
+                                    <span class="footer-contact__icon"><i class="fas fa-envelope"></i></span>
+                                    <a href="mailto:" class="footer-contact__link">infoname@mail.com</a>
+                                </div>
+                                <div class="footer-contact__item font-18 d-flex align-items-start">
+                                    <span class="footer-contact__icon"><i class="fas fa-map-Марker-alt"></i></span>
+                                    <p class="footer-contact__text">Херсонская улица, 43/12, Санкт-Петербург, Россия</p>
+                                </div>
+                                <div class="footer-contact__item font-18 d-flex align-items-start">
+                                    <span class="footer-contact__icon"><i class="fas fa-phone"></i></span>
+                                    <a href="tel:" class="footer-contact__link">(+888) 123 456 765</a>
+                                </div>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </footer>
+
+        <!-- bottom Footer -->
+        <div class="bottom-footer ">
+            <div class="container container-two">
+                <div class="bottom-footer__inner flx-between gap-3">
+                    <p class="bottom-footer__text"> &copy; CityScape 2024 | Все права защищены.</p>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">Условия использования</a>
+                        <a href="#" class="footer-link">Политика конфиденциальности</a>
+                        <a href="#" class="footer-link">Свяжитесь с нами</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =================== Footer Three End ====================== -->
+    </main>
+
+    <!-- Jquery js -->
+    <script src="../js/jquery-3.7.1.min.js"></script>
+
+    <!-- Bootstrap Bundle Js -->
+    <script src="../js/boostrap.bundle.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="../js/magnific-popup.min.js"></script>
+    <!-- Slick js -->
+    <script src="../js/slick.min.js"></script>
+    <!-- Counter Up Js -->
+    <script src="../js/counterup.min.js"></script>
+    <!-- Марquee text slider -->
+    <script src="../js/jquery.Марquee.min.js"></script>
+    <!-- Image Uploader -->
+    <script src="../js/image-uploader.min.js"></script>
+    <!-- jQuery Ui Css -->
+    <script src="../js/jquery-ui.min.js"></script>
+
+    <!-- main js -->
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>

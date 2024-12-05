@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title> CityScape Real Estate Html Template</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../images/logo/favicon.png">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="../css/fontawesome-all.min.css">
+    <!-- Magnific popup css -->
+    <link rel="stylesheet" href="../css/magnific-popup.css.css">
+    <!-- Slick -->
+    <link rel="stylesheet" href="../css/slick.css">
+    <!-- line awesome -->
+    <link rel="stylesheet" href="../css/line-awesome.min.css">
+    <!-- Image Uploader -->
+    <link rel="stylesheet" href="../css/image-uploader.min.css">
+    <!-- jQuery Ui Css -->
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <!-- Main css -->
+    <link rel="stylesheet" href="../css/main.css">
+
+
+</head>
+<body>
+    
+<!--==================== Preloader Start ====================-->
+  <div class="preloader">
+    <div class="loader"></div>
+  </div>
+<!--==================== Preloader End ====================-->
+
+<!--==================== Overlay Start ====================-->
+<div class="overlay"></div>
+<!--==================== Overlay End ====================-->
+
+<!--==================== Sidebar Overlay End ====================-->
+<div class="side-overlay"></div>
+<!--==================== Sidebar Overlay End ====================-->
+
+<!-- ==================== Scroll to Top End Here ==================== -->
+<div class="progress-wrap">
+  <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+  </svg>
+</div>
+<!-- ==================== Scroll to Top End Here ==================== -->
+
+<!-- ==================== Mobile Menu Start Here ==================== -->
+<div class="mobile-menu d-lg-none d-block">
+    <button type="button" class="close-button"> <i class="las la-times"></i> </button>
+    <div class="mobile-menu__inner">
+        <a href="Main_a.html" class="mobile-menu__logo">
+            <img src="../images/logo/white-logo.png" alt="Logo">
+        </a>
+        <div class="mobile-menu__menu">
+
+            <ul class="nav-menu flx-align nav-menu--mobile">
+                <li class="nav-menu__item">
+                    <a href="property.html" class="nav-submenu__link" class="nav-menu__link">Недвижимость</a>
+                </li>
+                <li class="nav-menu__item">
+                    <button class="nav-menu__link" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" style="font-size: 20px; "> Задание</button>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- ==================== Mobile Menu End Here ==================== -->
+
+
+<!-- ==================== Right Offcanvas Start Here ==================== -->
+<div class="common-offcanvas d-lg-block d-none">
+    <div class="flx-between">
+        <a href="index.html" class="mobile-menu__logo">
+            <img src="images/logo/white-logo.png" alt="Logo">
+        </a>
+        <button type="button" class="close-button d-flex position-relative top-0 end-0"> <i class="las la-times"></i> </button>
+    </div>
+
+    <div class="search-box mt-5">
+        <form action="#">
+            <input type="text" class="common-input common-input--light" placeholder="Search...">
+            <button type="submit" class="icon"> <i class="fas fa-search"></i> </button>
+        </form>
+    </div>
+
+    <ul class="address-list mt-5">
+        <li class="address-list__item flx-align">
+            <span class="address-list__icon"><i class="fas fa-map-marker-alt"></i></span>
+            <div class="address-list__content">
+                <p class="address-list__text">Бёрмсилл-стрит, штат Массачусетс, 55337, <br> United States</p>
+            </div>
+        </li>
+        <li class="address-list__item flx-align">
+            <span class="address-list__icon"> <i class="fas fa-phone"></i></span>
+            <div class="address-list__content">
+                <a href="tel:" class="address-list__text">+(1) 123 456 7890 </a>
+                <a href="tel:" class="address-list__text">+(1) 098 765 4321 </a>
+            </div>
+        </li>
+        <li class="address-list__item flx-align">
+            <span class="address-list__icon"> <i class="fas fa-envelope"></i></span>
+            <div class="address-list__content">
+                <a href="mailto:" class="address-list__text"> info@driller.com</a>
+                <a href="mailto:" class="address-list__text">info.example@driller.com</a>
+            </div>
+        </li>
+    </ul>
+
+    <div class="google-map mt-5">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1511.2499674845235!2d-73.99553882767792!3d40.75102778252164!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1686536419224!5m2!1sen!2sbd" loading="lazy" class="w-100 h-100"></iframe>
+    </div>
+
+    <ul class="social-list">
+    <li class="social-list__item"><a href="https://www.facebook.com" class="social-list__link flx-center"><i class="fab fa-facebook-f"></i></a> </li>
+    <li class="social-list__item"><a href="https://www.twitter.com" class="social-list__link flx-center"> <i class="fab fa-twitter"></i></a></li>
+    <li class="social-list__item"><a href="https://www.linkedin.com" class="social-list__link flx-center"> <i class="fab fa-linkedin-in"></i></a></li>
+    <li class="social-list__item"><a href="https://www.pinterest.com" class="social-list__link flx-center"> <i class="fab fa-instagram"></i></a></li>
+</ul>
+    
+</div>
+<!-- ==================== Right Offcanvas End Here ==================== -->
+
+<!-- Модальное окно -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                <p class="font-20">Ваше задание найти жилье соответвующее следующим
+                    критериям:</p>
+                <ul class="font-20" style="list-style-type: disc; padding: 20pt; margin: auto;" >
+                    <li><b>Квартира</b></li>
+                    <li>Стоимость <b>до 6000₽ за сутки</b></li>
+                    <li>Находится на <b style="color: blue;">синей</b> ветке метро</li>
+                    <li>Количество проживающих <b>больше 3х</b> </li>
+                    <li>Количество спальных мест <b>больше 2х</b></li>
+                    <li>Разрешено <b>с домашними животными</b></li>
+                    <li>Включены все основные удобства: беспроводной интернет Wi-Fi,
+                        фен, полотенца на каждого, постельное белье, телевизор,
+                        электрический чайник, микроволновка.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== Header Start Here ==================== -->
+<header class="header dark-header has-border">
+    <div class="container container-two">
+        <nav class="header-inner flx-between">
+            <!-- Logo Start -->
+            <div class="logo">
+                <a href="Main_a.html" class="link">
+                    <img src="../images/logo/white-logo.png" alt="Logo">
+                </a>
+            </div>
+            <!-- Logo End -->
+
+            <!-- Menu Start  -->
+            <div class="header-menu d-lg-block d-none ">
+
+                <ul class="nav-menu flx-align ">
+                    <li class="nav-menu__item">
+                        <a href="Main_a.html" class="nav-menu__link">Главная</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a href="property.html" class="nav-submenu__link" class="nav-menu__link">Недвижимость</a>
+                    <li class="nav-menu__item">
+                        <button class="nav-menu__link" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" style="font-size: 20px; "> Задание</button>
+                    </li>
+                </ul>
+            </div>
+            <!-- Menu End  -->
+
+            <!-- Header Right start -->
+            <div class="header-right flx-align">
+                <a href="#"
+                    class="contact-number text-poppins text-gray-800 fw-500 d-flex align-items-center gap-2">
+                    <span class="icon text-gradient font-20"><i class="fas fa-phone"></i></span>
+                    <span class="text">(629) 555-0129</span>
+                </a>
+                <!-- <button type="button" class="offcanvas-btn d-lg-block d-none me-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 30 24" fill="none">
+                <line x1="0.0078125" y1="12.293" x2="30.0078" y2="12.293" stroke="#181616" stroke-width="3"></line>
+                <path d="M5.00781 22.293H30.0078" stroke="#181616" stroke-width="3"></path>
+                <path d="M10.0078 2.29297H30.0078" stroke="#181616" stroke-width="3"></path>
+            </svg>
+        </button> -->
+                <button type="button" class="toggle-mobileMenu d-lg-none"> <i class="las la-bars"></i> </button>
+            </div>
+            <!-- Header Right End  -->
+        </nav>
+    </div>
+</header>
+<!-- ==================== Header End Here ==================== -->
+
+
+<!-- ==================== Breadcrumb Start Here ==================== -->
+<section class="breadcrumb padding-y-120">
+    <img src="../images/thumbs/breadcrumb-img.png" alt="" class="breadcrumb__img">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="breadcrumb__wrapper">
+                    <h2 class="breadcrumb__title"> Недвижимость Подробнее</h2>
+                    <ul class="breadcrumb__list">
+                        <li class="breadcrumb__item"><a href="Main_a.html" class="breadcrumb__link"> <i class="las la-home"></i> Главная</a> </li>
+                        <li class="breadcrumb__item"><i class="fas fa-angle-right"></i></li>
+                        <li class="breadcrumb__item"><a href="property.html" class="breadcrumb__link"> Недвижимость </a> </li>
+                        <li class="breadcrumb__item"><i class="fas fa-angle-right"></i></li>
+                        <li class="breadcrumb__item"> <span class="breadcrumb__item-text"> Недвижимость Подробнее </span> </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ==================== Breadcrumb End Here ==================== -->
+
+<section class="property-details padding-y-120" style="padding-bottom: 0px;">
+    <div class="container container-two">
+        <div class="row gy-4">
+            <div class="col-lg-12">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../images/thumbs/property-details-10 1.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../images/thumbs/property-details-10 2.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../images/thumbs/property-details-10 3.png" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Предыдущий</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Следующий</span>
+                    </button>
+                  </div>
+                
+                <div class="property-details-wrapper">
+                    <div class="property-details-item">
+                        <h6 class="property-details-item__title">1-комнатная квартира</h6>
+                            <div class="detail-panel panel">
+                                <div data-v-68c62c7a class="object-data" short-description>
+                                    <div class="row gy-5 gy-lg-6">
+                                        <div class="col-sm-4 col-6">
+                                            <div class="amenities-content d-flex align-items-center">
+                                                <span class="amenities-content__icon">
+                                                    <img src="../images/icons/amenities1.svg" alt="">
+                                                </span>
+                                                <div class="amenities-content__inner">
+                                                    <h6 class="amenities-content__title mb-0 font-16">2 комнаты</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4 col-6">
+                                            <div class="amenities-content d-flex align-items-center">
+                                                <span class="amenities-content__icon">
+                                                    <img src="../images/icons/people.svg" alt="">
+                                                </span>
+                                                <div class="amenities-content__inner">
+                                                    <h6 class="amenities-content__title mb-0 font-16">3 гостя</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4 col-6">
+                                            <div class="amenities-content d-flex align-items-center">
+                                                <span class="amenities-content__icon">
+                                                    <img src="../images/icons/amenities2.svg" alt="">
+                                                </span>
+                                                <div class="amenities-content__inner">
+                                                    <h6 class="amenities-content__title mb-0 font-16">2 кровати</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4 col-6">
+                                            <div class="amenities-content d-flex align-items-center">
+                                                <span class="amenities-content__icon">
+                                                    <img src="../images/icons/amenities3.svg" alt="">
+                                                </span>
+                                                <div class="amenities-content__inner">
+                                                    <h6 class="amenities-content__title mb-0 font-16">1 ваннная комната</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4 col-6">
+                                            <div class="amenities-content d-flex align-items-center">
+                                                <span class="amenities-content__icon">
+                                                    <img src="../images/icons/amenities5.svg" alt="">
+                                                </span>
+                                                <div class="amenities-content__inner">
+                                                    <h6 class="amenities-content__title mb-0 font-16">40 м <sup>2</sup></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="info-p">
+                                        <p><b>Основные спальные места: 3</b> 
+                                            <br>1 двуспальная кровать, 1 диван-кровать</p>
+                                        <p><b>Заезд:</b> после 14:00</p>
+                                        <p><b>Отъезд:</b> до 12:00</p>
+                                        <p><b>Минимальный срок проживания:</b> от 1 суток</p>
+                                        <h6 style="margin: 20px 0 0 0 ;">Правила объекта размещения</h6>
+                                        <div class="container mt-4">
+                                                <div class="row">
+                                                  <div class="col-md-6">
+                                                    <ul class="list-unstyled">
+                                                      <li class="list-item mb-3">
+                                                        <img src="../images/icons/icon-child.png" class="icon">
+                                                        <span>Можно с детьми любого возраста
+                                                            дети 1 года и младше размещаются бесплатно, но без дополнительного спального места</span>
+                                                      </li>
+                                                      <li class="list-item mb-3">
+                                                        <img src="../images/icons/icon-smoking.png" class="icon">
+                                                        <span>Курение запрещено
+                                                        </span>
+                                                      </li>
+                                                      <li class="list-item mb-3">
+                                                        <img src="../images/icons/icon-animal-no.png" class="icon">
+                                                        <span>Нельзя с питомцами</span>
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                    <ul class="list-unstyled">
+                                                      <li class="list-item mb-3">
+                                                        <img src="../images/icons/icon-party.png" class="icon">
+                                                        <span>Без вечеринок и мероприятий</span>
+                                                      </li>
+                                                      <li class="list-item mb-3">
+                                                        <img src="../images/icons/icon-document.png" alt="Иконка 5" class="icon">
+                                                        <span>Владелец предоставляет отчетные документы о проживании 
+                                                        </span>
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                        </div>
+
+                                        <h6 style="margin: 20px 0 0 0 ;">Основные удобства</h6>
+                                        <div class="container mt-4">
+                                                <div class="row">
+                                                  <div class="col-md-6">
+                                                    <ul class="list-unstyled">
+                                                      <li class="list-item mb-3">
+                                                        <img src="../images/icons/icon-Wi-Fi.png" alt="Иконка 1" class="icon">
+                                                        <span>Беспроводной интернет Wi-Fi</span>
+                                                      </li>
+                                                      <li class="list-item mb-3">
+                                                        <img src="../images/icons/icon-kettle.png" alt="Иконка 2" class="icon">
+                                                        <span>Электрический чайник
+                                                        </span>
+                                                      </li>
+                                                      <li class="list-item mb-3">
+                                                        <img src="../images/icons/icon-roller.png" alt="Иконка 3" class="icon">
+                                                        <span>Евроремонт</span>
+                                                      </li>
+                                                      <li class="list-item mb-3">
+                                                        <img src="../images/icons/icon-television.png" alt="Иконка 3" class="icon">
+                                                        <span>Телевизор</span>
+                                                      </li>
+                                                      
+                                                      <li class="list-item mb-3">
+                                                        <img src="../images/icons/icon-towel.png " class="icon">
+                                                        <span>Полотенца</span>
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                    <ul class="list-unstyled">
+                                                      <li class="list-item mb-3">
+                                                        <img src="../images/icons/icon-microwave.png" class="icon">
+                                                        <span>Микроволновка</span>
+                                                      </li>
+                                                      <!-- <li class="list-item mb-3">
+                                                        <img src="../images/icons/icon-bed-linen.png" class="icon">
+                                                        <span>Постельное белье</span>
+                                                      </li> -->
+                                                      <li class="list-item mb-3">
+                                                        <img src="../images/icons/icon-conditioner.png"  class="icon">
+                                                        <span>Кондиционер</span>
+                                                      </li> 
+                                                      <li class="list-item mb-3">
+                                                        <img src="../images/icons/icon-hairdryer.png" class="icon">
+                                                        <span>Фен</span>
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================ БРОНИРОВАНИЕ =========================== -->
+<div class="container mt-5 text-center">
+    <!-- Кнопка для открытия попапа -->
+    <button type="button" class="btn btn-main" style="padding: 30px 40px; font-weight: 700; font-size: 0.95rem;" data-bs-toggle="modal" data-bs-target="#bookingModal">
+      Забронировать
+    </button>
+  </div>
+
+  <!-- Попап форма -->
+  <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bookingModalLabel">Форма бронирования</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <!-- Поле Имя и Фамилия -->
+            <div class="mb-3">
+              <label for="fullName" class="form-label">Имя и фамилия</label>
+              <input type="text" class="form-control" id="fullName" placeholder="Введите ваше имя и фамилию" required>
+            </div>
+
+            <!-- Поле Желаемая дата бронирования -->
+            <div class="mb-3">
+              <label for="bookingDate" class="form-label">Желаемая дата бронирования</label>
+              <input type="date" class="form-control" id="bookingDate" required>
+            </div>
+
+            <!-- Поле Номер телефона -->
+            <div class="mb-3">
+              <label for="phoneNumber" class="form-label">Номер телефона</label>
+              <input type="tel" class="form-control" id="phoneNumber" placeholder="+7 (___) ___-__-__" required>
+            </div>
+
+            <!-- Кнопки отправки и закрытия -->
+            <div class="d-flex justify-content-end">
+              <button type="submit" class="btn btn-main">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================ БРОНИРОВАНИЕ =========================== -->
+
+        <!-- ============================ Testimonials Section Start =========================== -->
+        <section class="testimonial-four padding-y-120">
+            <div class="container container-two">
+                <div class="section-heading">
+                    <span class="section-heading__subtitle">
+                        <span class="text-gradient fw-semibold">Отзыв клиентов</span>
+                    </span>
+                    <h2 class="section-heading__title">Ваше удовлетворение - наш главный приоритет</h2>
+                </div>
+                <div class="testimonial-four-slider">
+                    <div class="testimonial-item style-two style-four">
+                        <p class="testimonial-item__desc mt-0">Назойливое выяснение времени выезда. И по телефону, и по смс, и через сайт. Создалось впечатление, что хотят заселить раньше следующего постояльца. А это стоит половину Суточной цены (мне такое предложение перед заселением поступало).</p>
+                        <div class="testimonial-item__top flx-between gap-2">
+                            <div class="testimonial-item__info d-flex align-items-center">
+                                <div>
+                                    <h6 class="testimonial-item__name">Александр</h6>
+                                    <span class="testimonial-item__designation">Ноябрь 2024, 2 суток</span>
+                                </div>
+                            </div>
+                            <span class="testimonial-item__quote"><i class="fas fa-quote-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="testimonial-item style-two style-four">
+                        <p class="testimonial-item__desc mt-0">Отличная квартира полностью соответствует цена-качество, все предусмотрено, в общем если поедем ещё раз остановимся там, отличное расположение, окна выходят во двор спать не мешает шум машин, ключи в сейфе, ни с кем созваниваться не пришлось, чисто, уютно! Супер!!!</p>
+                        <div class="testimonial-item__top flx-between gap-2">
+                            <div class="testimonial-item__info d-flex align-items-center">
+                                <div>
+                                    <h6 class="testimonial-item__name">Анастасия Борисовна</h6>
+                                    <span class="testimonial-item__designation">Октябрь 2024, 11 суток
+                                        </span>
+                                </div>
+                            </div>
+                            <span class="testimonial-item__quote"><i class="fas fa-quote-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="testimonial-item style-two style-four">
+                        <p class="testimonial-item__desc mt-0">Расположение: в шаговой доступности многие достопримечательности. Поддержка и решение актуальных вопросов при заселении и в течении проживания отлично. Квартира просторная, район тихий, окна во двор. Всё необходимое имеется.</p>
+                        <div class="testimonial-item__top flx-between gap-2">
+                            <div class="testimonial-item__info d-flex align-items-center">
+                                <div>
+                                    <h6 class="testimonial-item__name">Яна Александровна</h6>
+                                    <span class="testimonial-item__designation">Сентябрь 2024, 6 суток</span>
+                                </div>
+                            </div>
+                            <span class="testimonial-item__quote"><i class="fas fa-quote-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ============================ Testimonials Section End =========================== -->
+
+<!-- ============================= CTA section Start ===================== -->
+<section class="cta padding-b-120">
+    <div class="container container-two">
+        <div class="cta-box flx-between gap-2">
+            <div class="cta-content">
+                <h2 class="cta-content__title">Подпишитесь на нашу рассылку </h2>
+                <p class="cta-content__desc">Вы всегда будете в курсе скидок, сумеете вовремя забронировать метсо для отдыха</p>
+                <form action="#" class="cta-content__form d-flex align-items-center gap-2">
+                    <div class="position-relative w-100">
+                        <input type="text" class="common-input common-input--withLeftIcon w-100" placeholder="EВведите свой адрес электронной почты">
+                        <span class="input-icon input-icon--left text-gradient font-20 line-height-1"><i class="far fa-envelope"></i></span>
+                    </div>
+                    <button type="submit" class="btn btn-main text-uppercase flex-shrink-0"> Подписаться <span class="text">Сейчас</span> </button>
+                </form>
+            </div>
+            <div class="cta-content__thumb d-xl-block d-none">
+                <img src="../images/thumbs/cta-img.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ============================= CTA section End ===================== -->
+
+
+<!-- ==================== Footer Start Here ==================== -->
+<footer class="footer padding-y-120 ">
+    <div class="container container-two">
+
+        <div class="footer-top flx-between gap-3">
+            <div class="footer-top__left">
+                <span class="icon"><img src="../images/icons/envelop-icon.svg" alt=""></span>
+                <h2 class="text text-white mb-0">Подпишитесь на мою рассылку</h2>
+            </div>
+            <form action="#" class="subscribe-form d-flex align-items-center gap-4">
+                <div class="position-relative w-100">
+                    <input type="text" class="common-input common-input--withLeftIcon w-100"
+                        placeholder="Введите адрес электронной почты">
+                    <span class="input-icon input-icon--left text-gradient font-20 line-height-1"><i
+                            class="far fa-envelope"></i></span>
+                </div>
+                <button type="submit" class="btn btn-main flex-shrink-0 fw-normal">Подписаться</button>
+            </form>
+        </div>
+        <div class="row">
+            <div >
+                <div>
+                    <div class="footer-item__logo">
+                        <a href="index.html"> <img src="../images/logo/white-logo.png" alt=""></a>
+                    </div>
+                    <p class="footer-item__desc max-w-unset">Бронирование уникальных домов, квартир и
+                        апартаментов по всему миру.</p>
+                </div>
+            </div>
+            <div >
+                <div class="footer-item">
+                    <h6 class="footer-item__title">Свяжитесь с нами</h6>
+                    <div class="footer-contact">
+                        <div class="footer-contact__item font-18 d-flex align-items-start">
+                            <span class="footer-contact__icon"><i class="fas fa-envelope"></i></span>
+                            <a href="mailto:" class="footer-contact__link">infoname@mail.com</a>
+                        </div>
+                        <div class="footer-contact__item font-18 d-flex align-items-start">
+                            <span class="footer-contact__icon"><i class="fas fa-map-Марker-alt"></i></span>
+                            <p class="footer-contact__text">Херсонская улица, 43/12, Санкт-Петербург, Россия</p>
+                        </div>
+                        <div class="footer-contact__item font-18 d-flex align-items-start">
+                            <span class="footer-contact__icon"><i class="fas fa-phone"></i></span>
+                            <a href="tel:" class="footer-contact__link">(+888) 123 456 765</a>
+                        </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</footer>
+
+ <!-- bottom Footer -->
+ <div class="bottom-footer ">
+    <div class="container container-two">
+        <div class="bottom-footer__inner flx-between gap-3">
+            <p class="bottom-footer__text"> &copy; CityScape 2024 | Все права защищены.</p>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Условия использования</a>
+                <a href="#" class="footer-link">Политика конфиденциальности</a>
+                <a href="#" class="footer-link">Свяжитесь с нами</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ==================== Footer End Here ==================== -->
+  
+    <!-- Jquery js -->
+    <script src="../js/jquery-3.7.1.min.js"></script>
+
+    <!-- Bootstrap Bundle Js -->
+    <script src="../js/boostrap.bundle.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="../js/magnific-popup.min.js"></script>
+    <!-- Slick js -->
+    <script src="../js/slick.min.js"></script>
+    <!-- Counter Up Js -->
+    <script src="../js/counterup.min.js"></script>
+    <!-- Marquee text slider -->
+    <script src="../js/jquery.marquee.min.js"></script>
+    <!-- Image Uploader -->
+    <script src="../js/image-uploader.min.js"></script>
+    <!-- jQuery Ui Css -->
+    <script src="../js/jquery-ui.min.js"></script>
+
+    <!-- main js -->
+    <script src="../js/main.js"></script>
+
+    </body>
+</html>
