@@ -8480,7 +8480,7 @@ width: 24px;
   bottom: 0;
   left: 0;
   margin: auto;
-  fill: #204982;
+  fill: blue;
 }
 
 .metro-icon-green{
@@ -8489,7 +8489,7 @@ width: 24px;
     bottom: 0;
     left: 0;
     margin: auto;
-    fill: #208228;
+    fill: green;
   }
 
   .metro-icon-red{
@@ -8498,7 +8498,7 @@ width: 24px;
     bottom: 0;
     left: 0;
     margin: auto;
-    fill: #822020;
+    fill: red;
   }
 
   .detail-panel {
